@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.6 on win32)" generated="20220125 17:52:15.656" rpa="false" schemaversion="2">
+<suite id="s1" name="Administration" source="C:\Users\Bhanu.Battu\PycharmProjects\TestProject\TestCases\Administration">
+<suite id="s1-s1" name="Admin-ManageAwards" source="C:\Users\Bhanu.Battu\PycharmProjects\TestProject\TestCases\Administration\Admin-ManageAwards.robot">
+<test id="s1-s1-t1" name="Verify Admin user Dashboard">
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test case -1 is started *****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:52:15.967" endtime="20220125 17:52:15.967"/>
+</kw>
+<kw name="Open CTS Portal to Login">
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220125 17:52:15.968" level="INFO">Opening browser 'chrome' to base url 'https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login'.</msg>
+<status status="PASS" starttime="20220125 17:52:15.968" endtime="20220125 17:52:19.447"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220125 17:52:19.447" endtime="20220125 17:52:19.768"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:15.968" endtime="20220125 17:52:19.768"/>
+</kw>
+<kw name="Enter Admin Crendetials in CTS Login Page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input</arg>
+<arg>LauC</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:19.770" level="INFO">Typing text 'LauC' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20220125 17:52:19.769" endtime="20220125 17:52:19.996"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input</arg>
+<arg>cvcs123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:19.997" level="INFO">Typing text 'cvcs123' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220125 17:52:19.996" endtime="20220125 17:52:20.543"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:52:20.858" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:52:20.544" endtime="20220125 17:52:20.858"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:20.859" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20220125 17:52:20.858" endtime="20220125 17:52:20.984"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:19.768" endtime="20220125 17:52:20.985"/>
+</kw>
+<kw name="Admin DASHBOARD in CTS">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=MICAVS</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220125 17:52:20.986" endtime="20220125 17:52:21.127"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:52:46.128" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220125 17:52:21.127" endtime="20220125 17:52:46.128"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:52:46.272" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:52:46.128" endtime="20220125 17:52:46.272"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div/a/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:46.272" level="INFO">Clicking element 'xpath://*[@id="main_content"]/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div/a/div'.</msg>
+<status status="PASS" starttime="20220125 17:52:46.272" endtime="20220125 17:52:46.385"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:20.985" endtime="20220125 17:52:46.386"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test case is Passed ****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:52:46.386" endtime="20220125 17:52:46.386"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220125 17:52:46.387" endtime="20220125 17:52:48.620"/>
+</kw>
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<status status="PASS" starttime="20220125 17:52:15.967" endtime="20220125 17:52:48.620"/>
+</test>
+<test id="s1-s1-t2" name="Veriy Administartion list of Modules">
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test Case -2 is started ****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:52:48.630" endtime="20220125 17:52:48.630"/>
+</kw>
+<kw name="Open CTS Portal to Login">
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220125 17:52:48.631" level="INFO">Opening browser 'chrome' to base url 'https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login'.</msg>
+<status status="PASS" starttime="20220125 17:52:48.630" endtime="20220125 17:52:51.516"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220125 17:52:51.516" endtime="20220125 17:52:51.704"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:48.630" endtime="20220125 17:52:51.706"/>
+</kw>
+<kw name="Enter Admin Crendetials in CTS Login Page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input</arg>
+<arg>LauC</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:51.706" level="INFO">Typing text 'LauC' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20220125 17:52:51.706" endtime="20220125 17:52:51.910"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input</arg>
+<arg>cvcs123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:51.911" level="INFO">Typing text 'cvcs123' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220125 17:52:51.911" endtime="20220125 17:52:52.023"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:52:52.180" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:52:52.024" endtime="20220125 17:52:52.180"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:52.181" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20220125 17:52:52.181" endtime="20220125 17:52:52.257"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:51.706" endtime="20220125 17:52:52.258"/>
+</kw>
+<kw name="Admin DASHBOARD in CTS">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=MICAVS</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220125 17:52:52.259" endtime="20220125 17:52:52.304"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:53:17.325" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220125 17:52:52.304" endtime="20220125 17:53:17.326"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:53:17.545" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:53:17.326" endtime="20220125 17:53:17.546"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div/a/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:17.546" level="INFO">Clicking element 'xpath://*[@id="main_content"]/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div/a/div'.</msg>
+<status status="PASS" starttime="20220125 17:53:17.546" endtime="20220125 17:53:17.664"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:52.258" endtime="20220125 17:53:17.665"/>
+</kw>
+<kw name="List of Administartion-Admin Modules">
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:53:27.668" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220125 17:53:17.666" endtime="20220125 17:53:27.668"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220125 17:53:27.688" level="INFO">Current page contains element '//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4'.</msg>
+<status status="PASS" starttime="20220125 17:53:27.668" endtime="20220125 17:53:27.688"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Admin Dashboard page navigated to Admmin Module</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:27.688" endtime="20220125 17:53:27.688"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:53:27.847" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:53:27.688" endtime="20220125 17:53:27.847"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:17.665" endtime="20220125 17:53:27.847"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test case is Passed *****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:27.847" endtime="20220125 17:53:27.848"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220125 17:53:27.848" endtime="20220125 17:53:30.065"/>
+</kw>
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<status status="PASS" starttime="20220125 17:52:48.629" endtime="20220125 17:53:30.066"/>
+</test>
+<test id="s1-s1-t3" name="Veriy Administartion - Admin Manage Awards - Existing Award details and count">
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test Case -3 is started ****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:30.066" endtime="20220125 17:53:30.066"/>
+</kw>
+<kw name="Open CTS Portal to Login">
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220125 17:53:30.074" level="INFO">Opening browser 'chrome' to base url 'https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:54:32.917" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220125 17:54:32.916" endtime="20220125 17:54:32.917"/>
+</kw>
+<msg timestamp="20220125 17:54:32.935" level="FAIL">WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+</msg>
+<status status="FAIL" starttime="20220125 17:53:30.066" endtime="20220125 17:54:32.935"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220125 17:54:32.935" endtime="20220125 17:54:32.935"/>
+</kw>
+<status status="FAIL" starttime="20220125 17:53:30.066" endtime="20220125 17:54:32.935"/>
+</kw>
+<kw name="Enter Admin Crendetials in CTS Login Page">
+<status status="NOT RUN" starttime="20220125 17:54:32.935" endtime="20220125 17:54:32.935"/>
+</kw>
+<kw name="Admin DASHBOARD in CTS">
+<status status="NOT RUN" starttime="20220125 17:54:32.935" endtime="20220125 17:54:32.935"/>
+</kw>
+<kw name="List of Administartion-Admin Modules">
+<status status="NOT RUN" starttime="20220125 17:54:32.935" endtime="20220125 17:54:32.935"/>
+</kw>
+<kw name="Admin - Manage Award Limits link in Admin page and Click Manage Award Limits link">
+<status status="NOT RUN" starttime="20220125 17:54:32.935" endtime="20220125 17:54:32.935"/>
+</kw>
+<kw name="Existing Manage Award Limits and Count should be in Admin-Mangae Award Limits page">
+<status status="NOT RUN" starttime="20220125 17:54:32.935" endtime="20220125 17:54:32.935"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" starttime="20220125 17:54:32.935" endtime="20220125 17:54:32.935"/>
+</kw>
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<status status="FAIL" starttime="20220125 17:53:30.066" endtime="20220125 17:54:32.935">WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+</status>
+</test>
+<test id="s1-s1-t4" name="Veriy Administartion - Existing - Admin Manage Awards details in all web table pages">
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test Case -3.1 is started ****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:32.935" endtime="20220125 17:54:32.935"/>
+</kw>
+<kw name="Open CTS Portal to Login">
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220125 17:54:32.935" level="INFO">Opening browser 'chrome' to base url 'https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login'.</msg>
+<status status="PASS" starttime="20220125 17:54:32.935" endtime="20220125 17:55:33.446"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220125 17:55:33.446" endtime="20220125 17:55:33.769"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:32.935" endtime="20220125 17:55:33.769"/>
+</kw>
+<kw name="Enter Admin Crendetials in CTS Login Page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input</arg>
+<arg>LauC</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 17:55:33.772" level="INFO">Typing text 'LauC' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20220125 17:55:33.771" endtime="20220125 17:55:34.059"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input</arg>
+<arg>cvcs123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 17:55:34.059" level="INFO">Typing text 'cvcs123' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220125 17:55:34.059" endtime="20220125 17:55:34.368"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:55:34.666" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:55:34.368" endtime="20220125 17:55:34.666"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:55:34.667" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20220125 17:55:34.666" endtime="20220125 17:55:34.787"/>
+</kw>
+<status status="PASS" starttime="20220125 17:55:33.770" endtime="20220125 17:55:34.787"/>
+</kw>
+<kw name="Admin DASHBOARD in CTS">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=MICAVS</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220125 17:55:34.788" endtime="20220125 17:55:34.879"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:55:59.883" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220125 17:55:34.879" endtime="20220125 17:55:59.883"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:56:00.087" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:55:59.883" endtime="20220125 17:56:00.087"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div/a/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:00.087" level="INFO">Clicking element 'xpath://*[@id="main_content"]/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div/a/div'.</msg>
+<status status="PASS" starttime="20220125 17:56:00.087" endtime="20220125 17:56:00.230"/>
+</kw>
+<status status="PASS" starttime="20220125 17:55:34.788" endtime="20220125 17:56:00.231"/>
+</kw>
+<kw name="List of Administartion-Admin Modules">
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:56:10.238" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220125 17:56:00.232" endtime="20220125 17:56:10.238"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220125 17:56:10.257" level="INFO">Current page contains element '//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4'.</msg>
+<status status="PASS" starttime="20220125 17:56:10.238" endtime="20220125 17:56:10.258"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Admin Dashboard page navigated to Admmin Module</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:10.258" endtime="20220125 17:56:10.258"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:56:10.415" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:56:10.258" endtime="20220125 17:56:10.415"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:00.231" endtime="20220125 17:56:10.415"/>
+</kw>
+<kw name="Admin - Manage Award Limits link in Admin page and Click Manage Award Limits link">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Click Manage user roles on left pane of page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:10.415" endtime="20220125 17:56:10.416"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Manage Award Limits</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:10.416" level="INFO">Clicking link 'Manage Award Limits'.</msg>
+<status status="PASS" starttime="20220125 17:56:10.416" endtime="20220125 17:56:10.558"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:56:20.561" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220125 17:56:10.559" endtime="20220125 17:56:20.561"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:10.415" endtime="20220125 17:56:20.561"/>
+</kw>
+<kw name="Existing Manage Award Limits and Count should be in Admin-Mangae Award Limits page">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[1]/div/div/app-paginator/div/div/div[1]/div/div/div/span[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220125 17:56:20.575" level="INFO">Current page contains element '//*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[1]/div/div/app-paginator/div/div/div[1]/div/div/div/span[1]'.</msg>
+<status status="PASS" starttime="20220125 17:56:20.562" endtime="20220125 17:56:20.575"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:56:20.775" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:56:20.575" endtime="20220125 17:56:20.775"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Totalnumber_Awards}</var>
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[1]/div/div/app-paginator/div/div/div[1]/div/div/div/span[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:20.796" level="INFO">${Totalnumber_Awards} = 13</msg>
+<status status="PASS" starttime="20220125 17:56:20.775" endtime="20220125 17:56:20.797"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Total number of existing user roles : ${Totalnumber_Awards}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:20.797" endtime="20220125 17:56:20.798"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:56:30.804" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220125 17:56:20.798" endtime="20220125 17:56:30.804"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:20.561" endtime="20220125 17:56:30.804"/>
+</kw>
+<kw name="Web table Pagination - Manage Awards">
+<kw name="Sleep" library="BuiltIn">
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:56:50.818" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20220125 17:56:30.805" endtime="20220125 17:56:50.818"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Total}</var>
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[1]/div/div/app-paginator/div/div/div[1]/div/div/div/span[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.833" level="INFO">${Total} = 13</msg>
+<status status="PASS" starttime="20220125 17:56:50.818" endtime="20220125 17:56:50.833"/>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${Total_count}</var>
+<arg>${Total}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:50.833" level="INFO">${Total_count} = 13</msg>
+<status status="PASS" starttime="20220125 17:56:50.833" endtime="20220125 17:56:50.833"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.846" level="INFO">${rows} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:50.834" endtime="20220125 17:56:50.846"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${columns}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[1]/td</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.857" level="INFO">${columns} = 5</msg>
+<status status="PASS" starttime="20220125 17:56:50.846" endtime="20220125 17:56:50.857"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${Pagination_count}</var>
+<arg>${Total_count} / ${rows}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220125 17:56:50.858" level="INFO">${Pagination_count} = 1.3</msg>
+<status status="PASS" starttime="20220125 17:56:50.858" endtime="20220125 17:56:50.858"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${Pagination}</var>
+<arg>${Pagination_count}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20220125 17:56:50.858" level="INFO">${Pagination} = 1.3</msg>
+<status status="PASS" starttime="20220125 17:56:50.858" endtime="20220125 17:56:50.858"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Pagination}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:50.859" endtime="20220125 17:56:50.859"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:50.859" endtime="20220125 17:56:50.859"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${columns}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:50.859" endtime="20220125 17:56:50.859"/>
+</kw>
+<if>
+<branch type="IF" condition="${Pagination}&lt;1">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Expesnse_type}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[1]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220125 17:56:50.860" endtime="20220125 17:56:50.860"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Expesnse_type}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220125 17:56:50.860" endtime="20220125 17:56:50.860"/>
+</kw>
+<status status="NOT RUN" starttime="20220125 17:56:50.860" endtime="20220125 17:56:50.860"/>
+</branch>
+<branch type="ELSE">
+<for flavor="IN RANGE">
+<var>${x}</var>
+<value>0</value>
+<value>${Pagination}</value>
+<iter>
+<var name="${x}">0.0</var>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:50.861" level="INFO">${i1} = 1</msg>
+<status status="PASS" starttime="20220125 17:56:50.861" endtime="20220125 17:56:50.861"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.869" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:50.861" endtime="20220125 17:56:50.869"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.890" level="INFO">${Role_Name_Col} = EARNINGS/SUPPORT</msg>
+<status status="PASS" starttime="20220125 17:56:50.869" endtime="20220125 17:56:50.890"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.914" level="INFO">${Role_Name_Co2} = 200</msg>
+<status status="PASS" starttime="20220125 17:56:50.891" endtime="20220125 17:56:50.914"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:50.914" endtime="20220125 17:56:50.914"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:50.914" endtime="20220125 17:56:50.915"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:50.861" endtime="20220125 17:56:50.915"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:50.915" level="INFO">${i1} = 2</msg>
+<status status="PASS" starttime="20220125 17:56:50.915" endtime="20220125 17:56:50.915"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.922" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:50.915" endtime="20220125 17:56:50.922"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.943" level="INFO">${Role_Name_Col} = BURIAL</msg>
+<status status="PASS" starttime="20220125 17:56:50.922" endtime="20220125 17:56:50.943"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.969" level="INFO">${Role_Name_Co2} = 1500</msg>
+<status status="PASS" starttime="20220125 17:56:50.943" endtime="20220125 17:56:50.969"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:50.969" endtime="20220125 17:56:50.970"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:50.970" endtime="20220125 17:56:50.970"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:50.915" endtime="20220125 17:56:50.970"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:50.971" level="INFO">${i1} = 3</msg>
+<status status="PASS" starttime="20220125 17:56:50.970" endtime="20220125 17:56:50.971"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:50.978" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:50.971" endtime="20220125 17:56:50.978"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.000" level="INFO">${Role_Name_Col} = STANDARD</msg>
+<status status="PASS" starttime="20220125 17:56:50.978" endtime="20220125 17:56:51.000"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.022" level="INFO">${Role_Name_Co2} = 15000</msg>
+<status status="PASS" starttime="20220125 17:56:51.001" endtime="20220125 17:56:51.023"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:51.023" endtime="20220125 17:56:51.023"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:51.023" endtime="20220125 17:56:51.024"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:50.970" endtime="20220125 17:56:51.024"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:51.024" level="INFO">${i1} = 4</msg>
+<status status="PASS" starttime="20220125 17:56:51.024" endtime="20220125 17:56:51.024"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.030" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:51.024" endtime="20220125 17:56:51.030"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.051" level="INFO">${Role_Name_Col} = BURIAL</msg>
+<status status="PASS" starttime="20220125 17:56:51.030" endtime="20220125 17:56:51.051"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.073" level="INFO">${Role_Name_Co2} = 2000</msg>
+<status status="PASS" starttime="20220125 17:56:51.052" endtime="20220125 17:56:51.073"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:51.073" endtime="20220125 17:56:51.074"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:51.074" endtime="20220125 17:56:51.074"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:51.024" endtime="20220125 17:56:51.074"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:51.075" level="INFO">${i1} = 5</msg>
+<status status="PASS" starttime="20220125 17:56:51.075" endtime="20220125 17:56:51.075"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.084" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:51.075" endtime="20220125 17:56:51.084"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.106" level="INFO">${Role_Name_Col} = GRIEF COUNSELING</msg>
+<status status="PASS" starttime="20220125 17:56:51.084" endtime="20220125 17:56:51.106"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.127" level="INFO">${Role_Name_Co2} = 500</msg>
+<status status="PASS" starttime="20220125 17:56:51.107" endtime="20220125 17:56:51.127"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:51.127" endtime="20220125 17:56:51.127"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:51.127" endtime="20220125 17:56:51.128"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:51.075" endtime="20220125 17:56:51.128"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:51.128" level="INFO">${i1} = 6</msg>
+<status status="PASS" starttime="20220125 17:56:51.128" endtime="20220125 17:56:51.128"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.135" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:51.128" endtime="20220125 17:56:51.135"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.153" level="INFO">${Role_Name_Col} = CRIME SCENE CLEANUP</msg>
+<status status="PASS" starttime="20220125 17:56:51.136" endtime="20220125 17:56:51.153"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.174" level="INFO">${Role_Name_Co2} = 500</msg>
+<status status="PASS" starttime="20220125 17:56:51.153" endtime="20220125 17:56:51.174"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:51.175" endtime="20220125 17:56:51.175"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:51.175" endtime="20220125 17:56:51.175"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:51.128" endtime="20220125 17:56:51.175"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:51.175" level="INFO">${i1} = 7</msg>
+<status status="PASS" starttime="20220125 17:56:51.175" endtime="20220125 17:56:51.175"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.215" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:51.175" endtime="20220125 17:56:51.216"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.239" level="INFO">${Role_Name_Col} = EARNINGS/SUPPORT</msg>
+<status status="PASS" starttime="20220125 17:56:51.216" endtime="20220125 17:56:51.239"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.264" level="INFO">${Role_Name_Co2} = 350</msg>
+<status status="PASS" starttime="20220125 17:56:51.240" endtime="20220125 17:56:51.264"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:51.264" endtime="20220125 17:56:51.265"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:51.265" endtime="20220125 17:56:51.265"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:51.175" endtime="20220125 17:56:51.265"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:51.266" level="INFO">${i1} = 8</msg>
+<status status="PASS" starttime="20220125 17:56:51.266" endtime="20220125 17:56:51.266"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.275" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:51.266" endtime="20220125 17:56:51.275"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.299" level="INFO">${Role_Name_Col} = BURIAL</msg>
+<status status="PASS" starttime="20220125 17:56:51.275" endtime="20220125 17:56:51.299"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.320" level="INFO">${Role_Name_Co2} = 5000</msg>
+<status status="PASS" starttime="20220125 17:56:51.299" endtime="20220125 17:56:51.320"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:51.320" endtime="20220125 17:56:51.320"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:51.320" endtime="20220125 17:56:51.321"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:51.265" endtime="20220125 17:56:51.321"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:56:51.321" level="INFO">${i1} = 9</msg>
+<status status="PASS" starttime="20220125 17:56:51.321" endtime="20220125 17:56:51.321"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.328" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:56:51.321" endtime="20220125 17:56:51.328"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.351" level="INFO">${Role_Name_Col} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:56:51.328" endtime="20220125 17:56:51.351"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.374" level="INFO">${Role_Name_Co2} = 600</msg>
+<status status="PASS" starttime="20220125 17:56:51.351" endtime="20220125 17:56:51.374"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:56:51.374" endtime="20220125 17:56:51.374"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:56:51.374" endtime="20220125 17:56:51.374"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:51.321" endtime="20220125 17:56:51.374"/>
+</iter>
+<status status="PASS" starttime="20220125 17:56:50.860" endtime="20220125 17:56:51.375"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Next</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:56:51.375" level="INFO">Clicking button 'Next'.</msg>
+<status status="PASS" starttime="20220125 17:56:51.375" endtime="20220125 17:56:51.445"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:57:06.449" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220125 17:56:51.445" endtime="20220125 17:57:06.449"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Pagination:${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:57:06.449" endtime="20220125 17:57:06.450"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:50.860" endtime="20220125 17:57:06.450"/>
+</iter>
+<iter>
+<var name="${x}">1.0</var>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:57:06.450" level="INFO">${i1} = 1</msg>
+<status status="PASS" starttime="20220125 17:57:06.450" endtime="20220125 17:57:06.450"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.462" level="INFO">${rows_final} = 3</msg>
+<status status="PASS" starttime="20220125 17:57:06.451" endtime="20220125 17:57:06.462"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.483" level="INFO">${Role_Name_Col} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:57:06.462" endtime="20220125 17:57:06.483"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.503" level="INFO">${Role_Name_Co2} = 100</msg>
+<status status="PASS" starttime="20220125 17:57:06.483" endtime="20220125 17:57:06.503"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:57:06.504" endtime="20220125 17:57:06.504"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:57:06.504" endtime="20220125 17:57:06.504"/>
+</kw>
+<status status="PASS" starttime="20220125 17:57:06.450" endtime="20220125 17:57:06.504"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:57:06.505" level="INFO">${i1} = 2</msg>
+<status status="PASS" starttime="20220125 17:57:06.504" endtime="20220125 17:57:06.505"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.512" level="INFO">${rows_final} = 3</msg>
+<status status="PASS" starttime="20220125 17:57:06.505" endtime="20220125 17:57:06.512"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.533" level="INFO">${Role_Name_Col} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:57:06.512" endtime="20220125 17:57:06.533"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.553" level="INFO">${Role_Name_Co2} = 500</msg>
+<status status="PASS" starttime="20220125 17:57:06.533" endtime="20220125 17:57:06.553"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:57:06.553" endtime="20220125 17:57:06.554"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:57:06.554" endtime="20220125 17:57:06.554"/>
+</kw>
+<status status="PASS" starttime="20220125 17:57:06.504" endtime="20220125 17:57:06.554"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:57:06.554" level="INFO">${i1} = 3</msg>
+<status status="PASS" starttime="20220125 17:57:06.554" endtime="20220125 17:57:06.554"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.561" level="INFO">${rows_final} = 3</msg>
+<status status="PASS" starttime="20220125 17:57:06.555" endtime="20220125 17:57:06.561"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Col}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.582" level="INFO">${Role_Name_Col} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:57:06.561" endtime="20220125 17:57:06.582"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Role_Name_Co2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-award-limit/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.602" level="INFO">${Role_Name_Co2} = 100</msg>
+<status status="PASS" starttime="20220125 17:57:06.583" endtime="20220125 17:57:06.602"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Role_Name_Col} : ${Role_Name_Co2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:57:06.602" endtime="20220125 17:57:06.604"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<msg timestamp="20220125 17:57:06.604" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20220125 17:57:06.604" endtime="20220125 17:57:06.604"/>
+</kw>
+<status status="PASS" starttime="20220125 17:57:06.554" endtime="20220125 17:57:06.604"/>
+</iter>
+<status status="PASS" starttime="20220125 17:57:06.450" endtime="20220125 17:57:06.604"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Next</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:57:06.605" level="INFO">Clicking button 'Next'.</msg>
+<status status="PASS" starttime="20220125 17:57:06.604" endtime="20220125 17:57:06.644"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:57:21.649" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220125 17:57:06.645" endtime="20220125 17:57:21.649"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Pagination:${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:57:21.650" endtime="20220125 17:57:21.650"/>
+</kw>
+<status status="PASS" starttime="20220125 17:57:06.450" endtime="20220125 17:57:21.650"/>
+</iter>
+<status status="PASS" starttime="20220125 17:56:50.860" endtime="20220125 17:57:21.650"/>
+</for>
+<status status="PASS" starttime="20220125 17:56:50.860" endtime="20220125 17:57:21.650"/>
+</branch>
+<status status="PASS" starttime="20220125 17:56:50.859" endtime="20220125 17:57:21.650"/>
+</if>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220125 17:57:21.650" endtime="20220125 17:57:23.913"/>
+</kw>
+<status status="PASS" starttime="20220125 17:56:30.805" endtime="20220125 17:57:23.914"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test case is Passed *****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:57:23.914" endtime="20220125 17:57:23.914"/>
+</kw>
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<status status="PASS" starttime="20220125 17:54:32.935" endtime="20220125 17:57:23.914"/>
+</test>
+<doc>MiCAVS WEB APPLICATION TESTING</doc>
+<status status="FAIL" starttime="20220125 17:52:15.694" endtime="20220125 17:57:23.915"/>
+</suite>
+<status status="FAIL" starttime="20220125 17:52:15.663" endtime="20220125 17:57:23.915"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="1" skip="0">Functional</stat>
+<stat pass="3" fail="1" skip="0">Regression</stat>
+<stat pass="3" fail="1" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="Administration">Administration</stat>
+<stat pass="3" fail="1" skip="0" id="s1-s1" name="Admin-ManageAwards">Administration.Admin-ManageAwards</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220125 17:52:15.658" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Bhanu.Battu\automation\Scripts\robot.exe
+  c:\users\bhanu.battu\automation\python39.zip
+  c:\users\bhanu.battu\automation\DLLs
+  c:\users\bhanu.battu\automation\lib
+  c:\users\bhanu.battu\automation
+  C:\Users\Bhanu.Battu\AppData\Roaming\Python\Python39\site-packages
+  c:\users\bhanu.battu\automation\lib\site-packages
+  c:\users\bhanu.battu\automation\lib\site-packages\win32
+  c:\users\bhanu.battu\automation\lib\site-packages\win32\lib
+  c:\users\bhanu.battu\automation\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20220125 17:52:15.966" level="ERROR">Error in file 'C:\Users\Bhanu.Battu\PycharmProjects\TestProject\TestCases\Administration\Admin-ManageAwards.robot' on line 7: Variable file '..\TestData\TestData.py' does not exist.</msg>
+</errors>
+</robot>

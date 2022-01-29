@@ -1,0 +1,255 @@
+==============================================================================
+Administration                                                                
+==============================================================================
+Administration.Admin-ManageOrganizations :: MiCAVS WEB APPLICATION TESTING    
+==============================================================================
+Verify Admin user Dashboard                                           **** Test case -1 is started *****
+**** Test case is Passed ****
+| PASS |
+------------------------------------------------------------------------------
+Veriy Administartion list of Modules                                  **** Test Case -2 is started ****
+Admin Dashboard page navigated to Admmin Module
+**** Test case is Passed *****
+| PASS |
+------------------------------------------------------------------------------
+Veriy Administartion - Admin Manage Organizations - Existing Organ... **** Test Case -3 is started ****
+| FAIL |
+WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+------------------------------------------------------------------------------
+Veriy Administartion - Existing - Admin Manage Organizations detai... **** Test Case -3.1 is started ****
+Admin Dashboard page navigated to Admmin Module
+Click Manage Organizations on left pane of page
+Total number of existing user roles : 219
+21.9
+10
+5
+SSN : 
+ : 
+ : 
+ : 
+ : 
+ : 
+SSN : 
+SSN : 
+SSN : 
+Pagination:0.0
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+Pagination:1.0
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+SSN : 
+ : 
+Pagination:2.0
+Federal Tax ID : 122222222
+SSN : 
+Federal Tax ID : 123456789
+ : 
+SSN : 
+ : 
+ : 
+ : 
+Federal Tax ID : 546464565
+Pagination:3.0
+ : 
+ : 
+ : 
+ : 
+ : 
+ : 
+ : 
+ : 
+ : 
+Pagination:4.0
+ : 
+ : 
+ : 
+ : 
+ : 
+ : 
+ : 
+ : 
+ : 
+Pagination:5.0
+ : 
+SSN : 
+Federal Tax ID : 656655565
+SSN : 
+SSN : 
+ : 
+Federal Tax ID : 545345345
+SSN : 
+Federal Tax ID : 535345345
+Pagination:6.0
+Federal Tax ID : 433242343
+ : 
+Federal Tax ID : 646546464
+Federal Tax ID : 646547686
+Federal Tax ID : 324434242
+Federal Tax ID : 234234324
+Federal Tax ID : 534545345
+ : 
+ : 
+Pagination:7.0
+ : 
+SSN : 
+Federal Tax ID : 121232131
+Federal Tax ID : 111111111
+Federal Tax ID : 222222222
+Federal Tax ID : 324234234
+ : 
+Federal Tax ID : 423423432
+Federal Tax ID : 423423432
+Pagination:8.0
+Federal Tax ID : 534545454
+Federal Tax ID : 453432432
+ : 
+Federal Tax ID : 111111111
+ : 
+Federal Tax ID : 543543535
+Federal Tax ID : 644654646
+SSN : 
+Federal Tax ID : 434234234
+Pagination:9.0
+Federal Tax ID : 388383838
+Federal Tax ID : 112222222
+Federal Tax ID : 234222334
+Federal Tax ID : 253534543
+SSN : 
+Federal Tax ID : 465734537
+SSN : 
+Federal Tax ID : 542121211
+Federal Tax ID : 121212222
+Pagination:10.0
+SSN : 
+ : 
+ : 
+Federal Tax ID : 576575656
+SSN : 
+Federal Tax ID : 343434343
+Federal Tax ID : 343434343
+SSN : 
+Federal Tax ID : 212233333
+Pagination:11.0
+Federal Tax ID : 122122121
+Federal Tax ID : 122122121
+Federal Tax ID : 122122121
+Federal Tax ID : 121212121
+Federal Tax ID : 121212121
+Federal Tax ID : 767576566
+Federal Tax ID : 123232222
+Federal Tax ID : 121212121
+ : 
+Pagination:12.0
+ : 
+SSN : 
+Federal Tax ID : 656757656
+Federal Tax ID : 656543433
+Federal Tax ID : 212211211
+Federal Tax ID : 212211211
+ : 
+ : 
+ : 
+Pagination:13.0
+ : 
+ : 
+ : 
+ : 
+Federal Tax ID : 234323432
+Federal Tax ID : 123456789
+ : 
+ : 
+ : 
+Pagination:14.0
+Federal Tax ID : 123121123
+Federal Tax ID : 12121212
+Federal Tax ID : 121212
+Federal Tax ID : 12121313
+Federal Tax ID : 121212124
+Federal Tax ID : 121212121
+ : 
+Federal Tax ID : 313212313
+Federal Tax ID : 123456789
+Pagination:15.0
+SSN : 
+SSN : 
+Federal Tax ID : FED001
+Federal Tax ID : 222222222
+Federal Tax ID : 121212121
+SSN : 
+Federal Tax ID : 
+Federal Tax ID : 
+Federal Tax ID : 123
+Pagination:16.0
+Federal Tax ID : 341614759
+Federal Tax ID : 341538098
+Federal Tax ID : 341518132
+Federal Tax ID : 341457864
+SSN : 
+Federal Tax ID : 341264313
+Federal Tax ID : 341264063
+Federal Tax ID : 341150604
+Federal Tax ID : 341141179
+Pagination:17.0
+Federal Tax ID : 341115737
+Federal Tax ID : 341105564
+SSN : 
+Federal Tax ID : 341029988
+SSN : 
+Federal Tax ID : 341026135
+Federal Tax ID : 341015776
+Federal Tax ID : 340936207
+Federal Tax ID : 340906366
+Pagination:18.0
+Federal Tax ID : 311184707
+Federal Tax ID : 311152548
+Federal Tax ID : 311123736
+Federal Tax ID : 311113367
+Federal Tax ID : 310944586
+Federal Tax ID : 310907020
+Federal Tax ID : 288322661
+Federal Tax ID : 282113393
+Federal Tax ID : 281901408
+Pagination:19.0
+Federal Tax ID : 383233091
+Federal Tax ID : 381490180
+Federal Tax ID : 237420292
+Federal Tax ID : 237321231
+Federal Tax ID : 237270669
+ : 
+Federal Tax ID : 237105158
+Federal Tax ID : 232768957
+Federal Tax ID : 232503918
+Pagination:20.0
+Federal Tax ID : 232285657
+Federal Tax ID : 231879220
+Federal Tax ID : 231877629
+Federal Tax ID : 231390618
+Federal Tax ID : 222406619
+Federal Tax ID : 181693220
+Federal Tax ID : 231212
+Federal Tax ID : 43175021
+ : 43153285
+Pagination:21.0
+**** Test case is Passed *****
+| PASS |
+------------------------------------------------------------------------------
+Administration.Admin-ManageOrganizations :: MiCAVS WEB APPLICATION... | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Administration                                                        | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Bhanu.Battu\PycharmProjects\TestProject\Results\pabot_results\2\output.xml

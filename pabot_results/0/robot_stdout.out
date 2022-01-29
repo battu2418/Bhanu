@@ -1,0 +1,19 @@
+==============================================================================
+Excel Test                                                                    
+==============================================================================
+Submit Comp Calim in CTS with CVSTAFF1                                | FAIL |
+Variable '${username}' not found. Did you mean:
+    ${Txt_Username}
+------------------------------------------------------------------------------
+Submit Comp Calim in CTS with CVSTAFF2                                | FAIL |
+Variable '${username}' not found. Did you mean:
+    ${Txt_Username}
+------------------------------------------------------------------------------
+Submit Comp Calim in CTS with CVSTAFF3                                | FAIL |
+Variable '${username}' not found. Did you mean:
+    ${Txt_Username}
+------------------------------------------------------------------------------
+Excel Test                                                            | FAIL |
+3 tests, 0 passed, 3 failed
+==============================================================================
+Output:  C:\Users\Bhanu.Battu\PycharmProjects\TestProject\pabot_results\0\output.xml

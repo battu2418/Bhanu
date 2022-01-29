@@ -1,0 +1,9 @@
+datasources:8f5d994abfd908276c33a11905eeb1ae37d72cd6
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:c46b7c92aa00cde0b1c7e31a68e3c1517101c9d1
+--suite Administration.Admin Module ManageUserroles
+--suite Administration.Admin-ManageAwards
+--suite Administration.Admin-ManageOrganizations
+--suite Administration.Admin-ManageRFI Codes
+--suite Administration.Search Userrole

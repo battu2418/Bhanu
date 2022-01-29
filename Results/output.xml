@@ -1,0 +1,2427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.6 on win32)" generated="20220128 17:24:06.860" rpa="false" schemaversion="2">
+<suite id="s1" name="Excel Test" source="C:\Users\Bhanu.Battu\PycharmProjects\TestProject\TestCases\excel_test.robot">
+<test id="s1-t1" name="Test case:CV Staff- COMP Application filling in MICAVS">
+<kw name="Open browser1" library="CTS_LoginPageKeywords" type="SETUP">
+<arg>${cts_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${cts_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 17:24:07.952" level="INFO">Opening browser 'chrome' to base url 'https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login'.</msg>
+<status status="PASS" starttime="20220128 17:24:07.952" endtime="20220128 17:24:12.843"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 17:24:12.843" endtime="20220128 17:24:12.971"/>
+</kw>
+<status status="PASS" starttime="20220128 17:24:07.952" endtime="20220128 17:24:12.972"/>
+</kw>
+<kw name="Testing xls - Victim and Claimant">
+<arg>user01</arg>
+<arg>cvcs123</arg>
+<arg>MiCAVS-006</arg>
+<arg>COMP1</arg>
+<arg>Citizen-Reg15</arg>
+<arg>01/01/1992</arg>
+<arg>1234567891</arg>
+<arg>Test1@gmail.com</arg>
+<arg>Test add15</arg>
+<arg>Test second add1</arg>
+<arg>walker</arg>
+<arg>49544</arg>
+<arg>24000</arg>
+<arg>C-TL1</arg>
+<arg>C-MM1</arg>
+<arg>C-FS1</arg>
+<arg>01/01/1990</arg>
+<arg>6534243421</arg>
+<arg>C Test frist  ad1</arg>
+<arg>C test second  Add1</arg>
+<arg>Walker1</arg>
+<arg>49557</arg>
+<arg>01/01/2022</arg>
+<arg>01/03/2022</arg>
+<arg>Test Police</arg>
+<arg>Dan Ploce officer</arg>
+<arg>INC123456</arg>
+<arg>ABC Cinemas</arg>
+<arg>ABC Cinemas</arg>
+<arg>Walker</arg>
+<arg>Explained Briefly about Crime</arg>
+<arg>Yes-Reported after 48 hrs</arg>
+<arg>Reported within year</arg>
+<arg>Offender1</arg>
+<arg>District Court</arg>
+<arg>Case-123456</arg>
+<arg>2000</arg>
+<arg>Case investigation is in progress</arg>
+<arg>Attonery1</arg>
+<arg>6167349080</arg>
+<arg>I got 100 dollars</arg>
+<arg>yes Medical Treatnent required</arg>
+<arg>Aetna</arg>
+<arg>TEST ABC</arg>
+<arg>4444455555</arg>
+<arg>Company add1</arg>
+<arg>Company add2</arg>
+<arg>Test doc</arg>
+<arg>02/03/2021</arg>
+<arg>Test document -PNG</arg>
+<arg>2</arg>
+<kw name="Enter username and Passowrd" library="CTS_LoginPageKeywords">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Txt_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:24:12.974" level="INFO">Typing text 'user01' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20220128 17:24:12.974" endtime="20220128 17:24:13.094"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TXt_Password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:24:13.095" level="INFO">Typing text 'cvcs123' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220128 17:24:13.095" endtime="20220128 17:24:13.184"/>
+</kw>
+<status status="PASS" starttime="20220128 17:24:12.974" endtime="20220128 17:24:13.185"/>
+</kw>
+<kw name="Click Login button" library="CTS_LoginPageKeywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:24:13.185" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20220128 17:24:13.185" endtime="20220128 17:24:13.241"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:24:23.251" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:24:13.241" endtime="20220128 17:24:23.251"/>
+</kw>
+<status status="PASS" starttime="20220128 17:24:13.185" endtime="20220128 17:24:23.252"/>
+</kw>
+<kw name="Select MiCAVS Window and Click on COMP" library="CTS_LoginPageKeywords">
+<arg>${username}</arg>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${window}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220128 17:24:23.254" endtime="20220128 17:24:23.342"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:24:33.348" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:24:23.343" endtime="20220128 17:24:33.348"/>
+</kw>
+<if>
+<branch type="IF" condition="('${username}'=='user01')">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_comp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:24:33.351" level="INFO">Clicking element 'xpath://*[@id='main_content']/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div[2]/a/div'.</msg>
+<status status="PASS" starttime="20220128 17:24:33.350" endtime="20220128 17:24:34.141"/>
+</kw>
+<status status="PASS" starttime="20220128 17:24:33.350" endtime="20220128 17:24:34.141"/>
+</branch>
+<branch type="ELSE IF" condition="('${username}'=='cvstaff')">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_comp1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 17:24:34.141" endtime="20220128 17:24:34.141"/>
+</kw>
+<status status="NOT RUN" starttime="20220128 17:24:34.141" endtime="20220128 17:24:34.141"/>
+</branch>
+<status status="PASS" starttime="20220128 17:24:33.349" endtime="20220128 17:24:34.141"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>35s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:25:09.147" level="INFO">Slept 35 seconds</msg>
+<status status="PASS" starttime="20220128 17:24:34.141" endtime="20220128 17:25:09.148"/>
+</kw>
+<status status="PASS" starttime="20220128 17:24:23.252" endtime="20220128 17:25:09.149"/>
+</kw>
+<kw name="Enter Victim Information and Claimant details and Click on Next1" library="CTS_LoginPageKeywords">
+<arg>${input_VC_Lastname}</arg>
+<arg>${input_VC_Middlename}</arg>
+<arg>${input_VC_Firstname}</arg>
+<arg>${Input_VC_Date}</arg>
+<arg>${input_vc_cntnum}</arg>
+<arg>${input_vc_emailadd}</arg>
+<arg>${input_vc_vcadd1}</arg>
+<arg>${input_vc_vcadd2}</arg>
+<arg>${input_VC_VCCity}</arg>
+<arg>${input_VC_VCZipcode}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<arg>${input_Clmn_Lastname}</arg>
+<arg>${input_Clmn_Middlename}</arg>
+<arg>${input_Clmn_Firsttname}</arg>
+<arg>${Input_Clmn_DOB}</arg>
+<arg>${input_Clmn_cntnum}</arg>
+<arg>${input_Clmn_add1}</arg>
+<arg>${input_Clmn_add2}</arg>
+<arg>${input_Clmn_City}</arg>
+<arg>${input_Clmn_Zipcode}</arg>
+<arg>${Test}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Lastname}</arg>
+<arg>${input_VC_Lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:09.154" level="INFO">Typing text 'MiCAVS-006' into text field 'id:lastname'.</msg>
+<status status="PASS" starttime="20220128 17:25:09.153" endtime="20220128 17:25:09.287"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Middlename}</arg>
+<arg>${input_VC_Middlename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:09.288" level="INFO">Typing text 'COMP1' into text field 'id:middlename'.</msg>
+<status status="PASS" starttime="20220128 17:25:09.287" endtime="20220128 17:25:09.385"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Firstname}</arg>
+<arg>${input_VC_Firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:09.387" level="INFO">Typing text 'Citizen-Reg15' into text field 'id:firstname'.</msg>
+<status status="PASS" starttime="20220128 17:25:09.385" endtime="20220128 17:25:09.495"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Date}</arg>
+<arg>${Input_VC_Date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:09.496" level="INFO">Typing text '01/01/1992' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[6]/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:09.495" endtime="20220128 17:25:09.654"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:25:24.663" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:25:09.654" endtime="20220128 17:25:24.664"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_ssn}</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:24.666" level="INFO">Typing text '1234567890' into text field 'id:socialSecurityNumber'.</msg>
+<status status="PASS" starttime="20220128 17:25:24.664" endtime="20220128 17:25:24.849"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_MaritalStatus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:24.850" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[9]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:25:24.850" endtime="20220128 17:25:24.934"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_Item_Married}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:24.934" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[9]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[2]/li'.</msg>
+<status status="PASS" starttime="20220128 17:25:24.934" endtime="20220128 17:25:24.987"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_cntnum}</arg>
+<arg>${input_vc_cntnum}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:24.988" level="INFO">Typing text '1234567891' into text field 'id:contactNumber'.</msg>
+<status status="PASS" starttime="20220128 17:25:24.987" endtime="20220128 17:25:25.103"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>{testing starts}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220128 17:25:25.103" endtime="20220128 17:25:25.104"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_Gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:25.104" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[11]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:25:25.104" endtime="20220128 17:25:25.185"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_Item_Male}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:25.185" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[11]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[2]/li'.</msg>
+<status status="PASS" starttime="20220128 17:25:25.185" endtime="20220128 17:25:25.251"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:25:27.263" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220128 17:25:25.251" endtime="20220128 17:25:27.263"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${rb_US_mail_add_no}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:25:27.265" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[2]/div[3]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:25:27.264" endtime="20220128 17:25:27.934"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${rb_US_mail_add_yes}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:25:27.935" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[2]/div[2]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:25:27.935" endtime="20220128 17:25:28.573"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_vcadd1}</arg>
+<arg>${input_vc_vcadd1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:28.574" level="INFO">Typing text 'Test add15' into text field 'id:address1'.</msg>
+<status status="PASS" starttime="20220128 17:25:28.573" endtime="20220128 17:25:28.739"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_VCAdd2}</arg>
+<arg>${input_vc_vcadd2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:28.740" level="INFO">Typing text 'Test second add1' into text field 'id:address2'.</msg>
+<status status="PASS" starttime="20220128 17:25:28.739" endtime="20220128 17:25:28.908"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_VCCity}</arg>
+<arg>${input_VC_VCCity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:28.909" level="INFO">Typing text 'walker' into text field 'id:city1'.</msg>
+<status status="PASS" starttime="20220128 17:25:28.909" endtime="20220128 17:25:29.059"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:25:44.066" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:25:29.059" endtime="20220128 17:25:44.066"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_State}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:44.067" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[4]/div/div[5]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:25:44.066" endtime="20220128 17:25:44.193"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_item_michigan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:44.194" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[4]/div/div[5]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[22]/li'.</msg>
+<status status="PASS" starttime="20220128 17:25:44.194" endtime="20220128 17:25:44.282"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_VCZipcode}</arg>
+<arg>${input_VC_VCZipcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:44.283" level="INFO">Typing text '49544' into text field 'id:zipCode1'.</msg>
+<status status="PASS" starttime="20220128 17:25:44.283" endtime="20220128 17:25:44.423"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Test}' == '1'</arg>
+<arg>Victim and Claimant Physically injured_RB_YES</arg>
+<arg>${input_vc_emailadd}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<arg>ELSE</arg>
+<arg>Victim and Claimant Physically injured_RB_NO</arg>
+<arg>${input_Clmn_Lastname}</arg>
+<arg>${input_Clmn_Middlename}</arg>
+<arg>${input_Clmn_Firsttname}</arg>
+<arg>${Input_Clmn_DOB}</arg>
+<arg>${input_Clmn_cntnum}</arg>
+<arg>${input_Clmn_add1}</arg>
+<arg>${input_Clmn_add2}</arg>
+<arg>${input_Clmn_City}</arg>
+<arg>${input_Clmn_Zipcode}</arg>
+<arg>${input_vc_emailadd}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Victim and Claimant Physically injured_RB_NO" library="CTS_LoginPageKeywords">
+<arg>${input_Clmn_Lastname}</arg>
+<arg>${input_Clmn_Middlename}</arg>
+<arg>${input_Clmn_Firsttname}</arg>
+<arg>${Input_Clmn_DOB}</arg>
+<arg>${input_Clmn_cntnum}</arg>
+<arg>${input_Clmn_add1}</arg>
+<arg>${input_Clmn_add2}</arg>
+<arg>${input_Clmn_City}</arg>
+<arg>${input_Clmn_Zipcode}</arg>
+<arg>${input_vc_emailadd}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RB_personally_physically_injured_NO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:44.428" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[5]/div[3]/roots-radiobutton/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:25:44.428" endtime="20220128 17:25:44.546"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:25:49.557" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220128 17:25:44.546" endtime="20220128 17:25:49.557"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Victim_is_Minor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:49.558" level="INFO">Clicking element '//*[@id='ui-panel-0-label']/div/div[1]/div/div/div/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:25:49.558" endtime="20220128 17:25:49.697"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Victim_is_Deceased}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:49.698" level="INFO">Clicking element '//*[@id='ui-panel-0-label']/div/div[1]/div/div/div/div[3]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:25:49.698" endtime="20220128 17:25:49.787"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_clmnt_lastname}</arg>
+<arg>${input_Clmn_Lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:49.788" level="INFO">Typing text 'C-TL1' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[1]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:49.787" endtime="20220128 17:25:49.964"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Clmnt_Middlename}</arg>
+<arg>${input_Clmn_Middlename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:49.964" level="INFO">Typing text 'C-MM1' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[1]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:49.964" endtime="20220128 17:25:50.111"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Clmnt_Firstname}</arg>
+<arg>${input_Clmn_Firsttname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:50.111" level="INFO">Typing text 'C-FS1' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[1]/div[3]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:50.111" endtime="20220128 17:25:50.270"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Clmnt_Date}</arg>
+<arg>${Input_Clmn_DOB}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:50.272" level="INFO">Typing text '01/01/1990' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[1]/div[4]/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:50.271" endtime="20220128 17:25:50.440"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${text_clmnt_ssn}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220128 17:25:50.440" endtime="20220128 17:25:50.491"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_clmnt_ssn}</arg>
+<arg>1234567891</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:50.492" level="INFO">Typing text '1234567891' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[1]/div[5]/div/roots-inputmask/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:50.491" endtime="20220128 17:25:50.662"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_claimnt_ms}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:50.662" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:25:50.662" endtime="20220128 17:25:50.778"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_claimnt_item_single}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:50.778" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[2]/div[1]/div/div/div/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[4]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:25:50.778" endtime="20220128 17:25:50.898"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_clmnt_cntnum}</arg>
+<arg>${input_Clmn_cntnum}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:50.899" level="INFO">Typing text '6534243421' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[2]/div[2]/div/roots-inputmask/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:50.898" endtime="20220128 17:25:51.074"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${drop_down_claimnt_gender}</arg>
+<arg>25S</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220128 17:25:51.074" endtime="20220128 17:25:51.122"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_claimnt_gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:51.123" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[2]/div[3]/div/div/div/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:25:51.122" endtime="20220128 17:25:51.212"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_claimnt_item_other}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:51.213" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[2]/div[3]/div/div/div/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[2]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:25:51.212" endtime="20220128 17:25:51.297"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_down_Rel_to_VC}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:51.300" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[2]/div[4]/div/div/div/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:25:51.299" endtime="20220128 17:25:51.408"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_down_Item_Rel_to_VC}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:51.409" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[2]/div[4]/div/div/div/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[4]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:25:51.408" endtime="20220128 17:25:51.544"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${rb_claimnt_us_mail_add_yes}</arg>
+<arg>10</arg>
+<arg>10</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:25:51.545" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[3]/div[2]/roots-radiobutton/div/div[2]' at coordinates x=10, y=10.</msg>
+<status status="PASS" starttime="20220128 17:25:51.545" endtime="20220128 17:25:52.164"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:25:57.169" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220128 17:25:52.164" endtime="20220128 17:25:57.169"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Claimnt_Add1}</arg>
+<arg>${input_Clmn_add1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:57.171" level="INFO">Typing text 'C Test frist  ad1' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[5]/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:57.170" endtime="20220128 17:25:57.398"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Claimnt_Add2}</arg>
+<arg>${input_Clmn_add2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:57.398" level="INFO">Typing text 'C test second  Add1' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[5]/div/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:57.398" endtime="20220128 17:25:57.548"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Claimnt_City}</arg>
+<arg>${input_Clmn_City}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:57.548" level="INFO">Typing text 'Walker1' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[5]/div/div[3]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:57.548" endtime="20220128 17:25:57.705"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_down_Claimnt_State}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:57.705" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[5]/div/div[4]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:25:57.705" endtime="20220128 17:25:57.824"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_calimnt_item_michigan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:57.826" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[5]/div/div[4]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[22]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:25:57.825" endtime="20220128 17:25:57.950"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Claimnt_Zipcode}</arg>
+<arg>${input_Clmn_Zipcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:57.951" level="INFO">Typing text '49557' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-victim/form[2]/div[1]/div/div/roots-panel/div/div[2]/div/div[2]/div[5]/div/div[5]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:25:57.950" endtime="20220128 17:25:58.159"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="step-buttons"]/div[2]/div/app-victim/form[2]/div[1]/form[1]/div/div/div/div[3]/roots-radiobutton/div/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:58.160" level="INFO">Clicking element 'xpath://*[@id="step-buttons"]/div[2]/div/app-victim/form[2]/div[1]/form[1]/div/div/div/div[3]/roots-radiobutton/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:25:58.159" endtime="20220128 17:25:58.218"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_emailadd}</arg>
+<arg>${input_vc_emailadd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:58.219" level="INFO">Typing text 'Test1@gmail.com' into text field 'id:address'.</msg>
+<status status="PASS" starttime="20220128 17:25:58.218" endtime="20220128 17:25:58.488"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_AnnualInc}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:58.490" level="INFO">Typing text '24000' into text field 'id:annualIncome'.</msg>
+<status status="PASS" starttime="20220128 17:25:58.489" endtime="20220128 17:25:58.716"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:25:58.716" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:25:58.716" endtime="20220128 17:25:58.809"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:26:13.825" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:25:58.810" endtime="20220128 17:26:13.825"/>
+</kw>
+<status status="PASS" starttime="20220128 17:25:44.425" endtime="20220128 17:26:13.825"/>
+</kw>
+<status status="PASS" starttime="20220128 17:25:44.423" endtime="20220128 17:26:13.825"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:26:23.845" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:26:13.825" endtime="20220128 17:26:23.845"/>
+</kw>
+<status status="PASS" starttime="20220128 17:25:09.149" endtime="20220128 17:26:23.846"/>
+</kw>
+<kw name="Enter COMP - Crime Information details and Clcik on Next" library="CTS_LoginPageKeywords">
+<arg>${input_Date_of_Crime}</arg>
+<arg>${input_Date_Crime_Reported}</arg>
+<arg>${input_Text_Police_or_Agency_Reported}</arg>
+<arg>${input_Text_Police_or_Agency_COntactName}</arg>
+<arg>${input_Text_Incident_number}</arg>
+<arg>${input_Text_Location_Of_Crime}</arg>
+<arg>${input_Text_Location_Of_Crime}</arg>
+<arg>${input_Text_City}</arg>
+<arg>${input_Text_Brief_Desc_Crime}</arg>
+<arg>${input_Text_Crime_was_not_Reported_to_police_3to48hrs}</arg>
+<arg>${input_Text_Not_filingCase_Within1year}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DP_Type_Crime}</arg>
+<arg>80s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220128 17:26:23.846" endtime="20220128 17:26:23.911"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Type_Crime}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:26:23.911" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[1]/div[1]/div/roots-dropdown/div'.</msg>
+<status status="PASS" starttime="20220128 17:26:23.911" endtime="20220128 17:26:24.021"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:26:29.024" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220128 17:26:24.021" endtime="20220128 17:26:29.024"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Value_Vehicleclaim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:26:29.025" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[1]/div[1]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[4]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:26:29.024" endtime="20220128 17:26:29.133"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_Caused_Person_NO}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:26:29.134" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[2]/div/div/div/div[2]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:26:29.133" endtime="20220128 17:26:29.722"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Date_of_Crime}</arg>
+<arg>${input_Date_of_Crime}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:26:29.723" level="INFO">Typing text '01/01/2022' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[3]/div[1]/div/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:26:29.722" endtime="20220128 17:26:29.887"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Date_Crime_Reported}</arg>
+<arg>${input_Date_Crime_Reported}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:26:29.887" level="INFO">Typing text '01/03/2022' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[3]/div[2]/div/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:26:29.887" endtime="20220128 17:26:30.041"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_County_Crime_OCCured}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:26:30.042" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[3]/div[3]/div/roots-dropdown/div/div[3]'.</msg>
+<status status="PASS" starttime="20220128 17:26:30.041" endtime="20220128 17:26:30.185"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Value_ALCONA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:26:30.186" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[3]/div[3]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[42]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:26:30.185" endtime="20220128 17:26:30.285"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:26:35.300" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220128 17:26:30.285" endtime="20220128 17:26:35.300"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Police_or_Agency_Reported}</arg>
+<arg>${input_Text_Police_or_Agency_Reported}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:26:35.301" level="INFO">Typing text 'Test Police' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-crime/div[2]/form/div[4]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:26:35.300" endtime="20220128 17:26:35.533"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:27:00.556" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220128 17:26:35.533" endtime="20220128 17:27:00.557"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Police_or_Agency_COntactName}</arg>
+<arg>${input_Text_Police_or_Agency_COntactName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:00.560" level="INFO">Typing text 'Dan Ploce officer' into text field 'id:repAgency'.</msg>
+<status status="PASS" starttime="20220128 17:27:00.557" endtime="20220128 17:27:00.784"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Incident_number}</arg>
+<arg>${input_Text_Incident_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:00.784" level="INFO">Typing text 'INC123456' into text field 'id:incidentNumber'.</msg>
+<status status="PASS" starttime="20220128 17:27:00.784" endtime="20220128 17:27:01.004"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Location_Of_Crime}</arg>
+<arg>${input_Text_Location_Of_Crime}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:01.005" level="INFO">Typing text 'ABC Cinemas' into text field 'id:crimeLocation'.</msg>
+<status status="PASS" starttime="20220128 17:27:01.004" endtime="20220128 17:27:01.246"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_City}</arg>
+<arg>${input_Text_City}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:01.246" level="INFO">Typing text 'Walker' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-crime/div[2]/form/div[5]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:27:01.246" endtime="20220128 17:27:01.465"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_state}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:01.467" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[5]/div[3]/div/roots-dropdown/div'.</msg>
+<status status="PASS" starttime="20220128 17:27:01.466" endtime="20220128 17:27:01.635"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Value_Michigan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:01.636" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[5]/div[3]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[22]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:27:01.635" endtime="20220128 17:27:01.779"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Brief_Desc_Crime}</arg>
+<arg>${input_Text_Brief_Desc_Crime}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:01.782" level="INFO">Typing text 'Explained Briefly about Crime' into text field 'id:crimeDesc'.</msg>
+<status status="PASS" starttime="20220128 17:27:01.781" endtime="20220128 17:27:02.068"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Crime_was_not_Reported_to_police_3to48hrs}</arg>
+<arg>${input_Text_Crime_was_not_Reported_to_police_3to48hrs}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:02.070" level="INFO">Typing text 'Yes-Reported after 48 hrs' into text field 'id:delayReason'.</msg>
+<status status="PASS" starttime="20220128 17:27:02.069" endtime="20220128 17:27:02.310"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Not_filingCase_Within1year}</arg>
+<arg>${input_Text_Not_filingCase_Within1year}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:02.312" level="INFO">Typing text 'Reported within year' into text field 'id:delayReasonClaim'.</msg>
+<status status="PASS" starttime="20220128 17:27:02.311" endtime="20220128 17:27:02.532"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Chk_Attorney}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:02.533" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[10]/div[1]/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:27:02.532" endtime="20220128 17:27:02.643"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Race_Ethnic_Background}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:02.643" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[10]/div[2]/div[1]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:27:02.643" endtime="20220128 17:27:02.783"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Item_Asain}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:02.788" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[10]/div[2]/div[1]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[2]/li'.</msg>
+<status status="PASS" starttime="20220128 17:27:02.783" endtime="20220128 17:27:02.900"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_BEFORE_Crime}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:27:02.900" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[10]/div[2]/div[2]/div/div[2]/div/roots-radiobutton[1]/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:27:02.900" endtime="20220128 17:27:03.531"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:03.532" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:27:03.531" endtime="20220128 17:27:03.714"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:27:23.727" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20220128 17:27:03.714" endtime="20220128 17:27:23.728"/>
+</kw>
+<status status="PASS" starttime="20220128 17:26:23.846" endtime="20220128 17:27:23.729"/>
+</kw>
+<kw name="Enter COMP - R&amp;R details and Click on Next" library="CTS_LoginPageKeywords">
+<arg>${input_Text_Name_Offender}</arg>
+<arg>${input_Text_Name_Of_Court}</arg>
+<arg>${input_Text_Court_CaseNumber}</arg>
+<arg>${input_Text_Amnt_Ordered}</arg>
+<arg>${Input_Text_Pls_Explain}</arg>
+<arg>${input_Text_Name_Of_Attonery}</arg>
+<arg>${input_Text_Attonery_Telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Name_Offender}</arg>
+<arg>${input_Text_Name_Offender}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:23.734" level="INFO">Typing text 'Offender1' into text field 'id:offenderName'.</msg>
+<status status="PASS" starttime="20220128 17:27:23.733" endtime="20220128 17:27:23.936"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:27:33.953" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:27:23.937" endtime="20220128 17:27:33.953"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>{system is ready to clcik Radio button}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220128 17:27:33.954" endtime="20220128 17:27:33.954"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_OFN_Chrd_In_CC_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:27:33.954" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-rest-recovery/form/div[1]/div/div[3]/div[2]/div/roots-radiobutton/div/div[2]/span' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:27:33.954" endtime="20220128 17:27:34.591"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:27:49.595" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:27:34.592" endtime="20220128 17:27:49.596"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Name_Of_Court}</arg>
+<arg>${input_Text_Name_Of_Court}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:49.598" level="INFO">Typing text 'District Court' into text field 'xpath://*[@id='courtName']'.</msg>
+<status status="PASS" starttime="20220128 17:27:49.597" endtime="20220128 17:27:49.849"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Court_CaseNumber}</arg>
+<arg>${input_Text_Court_CaseNumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:49.849" level="INFO">Typing text 'Case-123456' into text field 'xpath://*[@id='courtCase']'.</msg>
+<status status="PASS" starttime="20220128 17:27:49.849" endtime="20220128 17:27:50.069"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_CRT_ORDR_OFND_PAY_RES_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:27:50.070" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-rest-recovery/form[1]/div/div/div[5]/div[1]/div/div/div[1]/roots-radiobutton/div' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:27:50.069" endtime="20220128 17:27:50.654"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Amnt_Ordered}</arg>
+<arg>${input_Text_Amnt_Ordered}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:50.656" level="INFO">Typing text '2000' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-rest-recovery/form[1]/div/div/div[5]/div[2]/div/div/input '.</msg>
+<status status="PASS" starttime="20220128 17:27:50.655" endtime="20220128 17:27:50.864"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_Civil_Court_action_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:27:50.867" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-rest-recovery/form/div[1]/div/div[6]/div[1]/div/div[1]/div/roots-radiobutton/div/div[2]/span' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:27:50.864" endtime="20220128 17:27:51.496"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Pls_Explain}</arg>
+<arg>${Input_Text_Pls_Explain}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:51.500" level="INFO">Typing text 'Case investigation is in progress' into text field 'xpath://*[@id='settleDesc']'.</msg>
+<status status="PASS" starttime="20220128 17:27:51.497" endtime="20220128 17:27:51.838"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_Settlement_NO}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:27:51.838" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-rest-recovery/form/div[1]/div/div[7]/div/div/div/div[2]/roots-radiobutton/div/div[2]/span' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:27:51.838" endtime="20220128 17:27:52.426"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Name_Of_Attonery}</arg>
+<arg>${input_Text_Name_Of_Attonery}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:52.427" level="INFO">Typing text 'Attonery1' into text field 'id:attorName'.</msg>
+<status status="PASS" starttime="20220128 17:27:52.427" endtime="20220128 17:27:52.621"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Attonery_Telephone}</arg>
+<arg>${input_Text_Attonery_Telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:52.621" level="INFO">Typing text '6167349080' into text field 'id:attorneyPhoneNumber'.</msg>
+<status status="PASS" starttime="20220128 17:27:52.621" endtime="20220128 17:27:52.837"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:27:55.854" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220128 17:27:52.838" endtime="20220128 17:27:55.855"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:27:55.855" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:27:55.855" endtime="20220128 17:27:56.004"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:28:06.006" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:27:56.004" endtime="20220128 17:28:06.007"/>
+</kw>
+<status status="PASS" starttime="20220128 17:27:23.729" endtime="20220128 17:28:06.007"/>
+</kw>
+<kw name="Enter COMP - Claim Determination details and Click on next" library="CTS_LoginPageKeywords">
+<arg>${input_Text_VC_CHarity_care_pay_DON1}</arg>
+<arg>${Input_Text_ad_med_Trt_Required}</arg>
+<arg>${input_Text_Primary_Medical_Insurer}</arg>
+<arg>${input_Text_Victim_Employer_Name}</arg>
+<arg>${input_Victim_Employer_Ph_Num}</arg>
+<arg>${input_Text_Employer_Add1}</arg>
+<arg>${input_Text_Employer_Address2}</arg>
+<arg>${input_Text_Doctor_who_will_verify_medical_disability}</arg>
+<arg>${input_Text_From}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>10S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:28:16.016" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:28:06.014" endtime="20220128 17:28:16.017"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Medical_Expense_Benefits_Victim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:16.019" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[1]/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:28:16.019" endtime="20220128 17:28:16.152"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_MIN_LOSSOF200_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:28:16.152" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[2]/div[1]/div/div[2]/div/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:28:16.152" endtime="20220128 17:28:16.752"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_LOST_TWO_CNT_EARN_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:28:16.752" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[2]/div[2]/div/div[2]/div/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:28:16.752" endtime="20220128 17:28:17.342"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_CRIMINAL_SA_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:28:17.343" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[3]/div[1]/div/div[2]/div/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:28:17.342" endtime="20220128 17:28:17.938"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_RTD_AGE_DIS_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:28:17.939" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[3]/div[2]/div/div[2]/div/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:28:17.938" endtime="20220128 17:28:18.531"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:28:28.534" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:28:18.531" endtime="20220128 17:28:28.534"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Health_Insurance1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:28.536" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[1]/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:28:28.535" endtime="20220128 17:28:28.669"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Medicare1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:28.669" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[1]/div[3]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:28:28.669" endtime="20220128 17:28:28.771"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Automobile_Insurance1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:28.771" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[1]/div[4]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:28:28.771" endtime="20220128 17:28:28.870"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_Ch_PA_DO_OT_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:28:28.870" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[2]/div/div/div/div[1]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:28:28.870" endtime="20220128 17:28:29.483"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:28:32.495" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220128 17:28:29.483" endtime="20220128 17:28:32.495"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_VC_CHarity_care_pay_DON1}</arg>
+<arg>${input_Text_VC_CHarity_care_pay_DON1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:32.496" level="INFO">Typing text 'I got 100 dollars' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-claim/form[2]/div[2]/div[2]/div/div/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:28:32.495" endtime="20220128 17:28:32.726"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_MED_TRT_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:28:32.726" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[3]/div/div/div/div/div[1]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:28:32.726" endtime="20220128 17:28:33.333"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_ad_med_Trt_Required}</arg>
+<arg>${Input_Text_ad_med_Trt_Required}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:33.338" level="INFO">Typing text 'yes Medical Treatnent required' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-claim/form[2]/div[2]/div[3]/div/div/div/div[2]/div/div/textarea'.</msg>
+<status status="PASS" starttime="20220128 17:28:33.338" endtime="20220128 17:28:33.626"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Primary_Medical_Insurer}</arg>
+<arg>${input_Text_Primary_Medical_Insurer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:33.627" level="INFO">Typing text 'Aetna' into text field 'xpath://*[@id='primaryInsurer']'.</msg>
+<status status="PASS" starttime="20220128 17:28:33.627" endtime="20220128 17:28:33.824"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Victim_Employer_Name}</arg>
+<arg>${input_Text_Victim_Employer_Name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:33.833" level="INFO">Typing text 'TEST ABC' into text field 'id:victimEmployer'.</msg>
+<status status="PASS" starttime="20220128 17:28:33.832" endtime="20220128 17:28:34.053"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Victim_Employer_Ph_Num1}</arg>
+<arg>${input_Victim_Employer_Ph_Num}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:34.053" level="INFO">Typing text '4444455555' into text field 'id:employeerPhoneNumber'.</msg>
+<status status="PASS" starttime="20220128 17:28:34.053" endtime="20220128 17:28:34.270"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Employer_Add1}</arg>
+<arg>${input_Text_Employer_Add1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:34.271" level="INFO">Typing text 'Company add1' into text field 'xpath://*[@id='empAddress']'.</msg>
+<status status="PASS" starttime="20220128 17:28:34.271" endtime="20220128 17:28:34.513"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Employer_Add2}</arg>
+<arg>${input_Text_Employer_Address2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:34.513" level="INFO">Typing text 'Company add2' into text field 'xpath://*[@id='empAddress2']'.</msg>
+<status status="PASS" starttime="20220128 17:28:34.513" endtime="20220128 17:28:34.754"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Doctor_who_will_verify_medical_disability}</arg>
+<arg>${input_Text_Doctor_who_will_verify_medical_disability}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:34.754" level="INFO">Typing text 'Test doc' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-claim/form[4]/div[2]/div[2]/div[3]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:28:34.754" endtime="20220128 17:28:34.968"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_From}</arg>
+<arg>${input_Text_From}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:34.969" level="INFO">Typing text '02/03/2021' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[4]/div[2]/div[3]/div/div/div[1]/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:28:34.968" endtime="20220128 17:28:35.208"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_TO_PRESENT}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:28:35.208" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[4]/div[2]/div[3]/div/div/div[2]/div/div/div[2]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:28:35.208" endtime="20220128 17:28:35.819"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_NONE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:35.821" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[4]/div[2]/div[4]/div[5]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:28:35.820" endtime="20220128 17:28:35.925"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:28:35.926" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:28:35.925" endtime="20220128 17:28:36.088"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:29:01.091" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220128 17:28:36.088" endtime="20220128 17:29:01.091"/>
+</kw>
+<status status="PASS" starttime="20220128 17:28:06.007" endtime="20220128 17:29:01.092"/>
+</kw>
+<kw name="Enter and add COMP - Documents and click on next" library="CTS_LoginPageKeywords">
+<arg>${input_Text_Document_name}</arg>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>0</value>
+<value>2</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_Document_type}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:29:01.092" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[2]/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:29:01.092" endtime="20220128 17:29:01.233"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_down_itemized_bill}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:29:01.234" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[2]/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[1]/li'.</msg>
+<status status="PASS" starttime="20220128 17:29:01.233" endtime="20220128 17:29:01.348"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Document_name}</arg>
+<arg>${input_Text_Document_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:29:01.349" level="INFO">Typing text 'Test document -PNG' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[3]/input'.</msg>
+<status status="PASS" starttime="20220128 17:29:01.348" endtime="20220128 17:29:01.559"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:29:16.567" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:29:01.559" endtime="20220128 17:29:16.567"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Browse}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:29:16.569" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[4]/div/roots-fileupload/span'.</msg>
+<status status="PASS" starttime="20220128 17:29:16.568" endtime="20220128 17:29:16.690"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:29:26.698" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:29:16.690" endtime="20220128 17:29:26.698"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>C:\\Users\\Bhanu.Battu\\Documents\\File.exe</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20220128 17:29:26.741" level="INFO">AutoItLibrary.Run(FileName='C:\Users\Bhanu.Battu\Documents\File.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20220128 17:29:26.699" endtime="20220128 17:29:26.742"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:29:36.758" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:29:26.742" endtime="20220128 17:29:36.758"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button_Upload}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:29:36.759" level="INFO">Clicking button 'Upload'.</msg>
+<status status="PASS" starttime="20220128 17:29:36.758" endtime="20220128 17:29:36.850"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:29:46.873" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:29:36.851" endtime="20220128 17:29:46.874"/>
+</kw>
+<status status="PASS" starttime="20220128 17:29:01.092" endtime="20220128 17:29:46.874"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_Document_type}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:29:46.876" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[2]/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:29:46.875" endtime="20220128 17:29:46.949"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_down_itemized_bill}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:29:46.950" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[2]/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[1]/li'.</msg>
+<status status="PASS" starttime="20220128 17:29:46.949" endtime="20220128 17:29:47.028"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Document_name}</arg>
+<arg>${input_Text_Document_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:29:47.029" level="INFO">Typing text 'Test document -PNG' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[3]/input'.</msg>
+<status status="PASS" starttime="20220128 17:29:47.028" endtime="20220128 17:29:47.143"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:30:02.156" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:29:47.144" endtime="20220128 17:30:02.156"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Browse}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:30:02.156" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[4]/div/roots-fileupload/span'.</msg>
+<status status="PASS" starttime="20220128 17:30:02.156" endtime="20220128 17:30:02.267"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:30:12.282" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:30:02.268" endtime="20220128 17:30:12.282"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>C:\\Users\\Bhanu.Battu\\Documents\\File.exe</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20220128 17:30:12.308" level="INFO">AutoItLibrary.Run(FileName='C:\Users\Bhanu.Battu\Documents\File.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20220128 17:30:12.283" endtime="20220128 17:30:12.308"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:30:22.329" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:30:12.308" endtime="20220128 17:30:22.329"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button_Upload}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:30:22.331" level="INFO">Clicking button 'Upload'.</msg>
+<status status="PASS" starttime="20220128 17:30:22.330" endtime="20220128 17:30:22.449"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:30:32.454" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:30:22.450" endtime="20220128 17:30:32.455"/>
+</kw>
+<status status="PASS" starttime="20220128 17:29:46.875" endtime="20220128 17:30:32.455"/>
+</iter>
+<status status="PASS" starttime="20220128 17:29:01.092" endtime="20220128 17:30:32.455"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:30:32.457" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:30:32.455" endtime="20220128 17:30:32.557"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:31:02.558" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20220128 17:30:32.557" endtime="20220128 17:31:02.558"/>
+</kw>
+<status status="PASS" starttime="20220128 17:29:01.092" endtime="20220128 17:31:02.558"/>
+</kw>
+<kw name="Ente COMP-Agreement Page and Click on submit" library="CTS_LoginPageKeywords">
+<arg>${username}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Auth}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:31:02.560" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[3]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:31:02.559" endtime="20220128 17:31:02.630"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_REPAYMENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:31:02.631" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[4]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:31:02.630" endtime="20220128 17:31:02.690"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Financial}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:31:02.691" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[1]/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:31:02.691" endtime="20220128 17:31:02.757"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_DECLARATION}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:31:02.758" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:31:02.758" endtime="20220128 17:31:02.830"/>
+</kw>
+<if>
+<branch type="IF" condition="('${username}'=='user01')">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${User01_CHK_Sign_application}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:31:02.833" level="INFO">Clicking element '//*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[3]/div/div[1]/label/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:31:02.832" endtime="20220128 17:31:02.903"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="step-buttons"]/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[3]/div/div[1]/input</arg>
+<arg>Bhanu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:31:02.904" level="INFO">Typing text 'Bhanu' into text field 'xpath://*[@id="step-buttons"]/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[3]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20220128 17:31:02.903" endtime="20220128 17:31:03.015"/>
+</kw>
+<status status="PASS" starttime="20220128 17:31:02.831" endtime="20220128 17:31:03.015"/>
+</branch>
+<branch type="ELSE IF" condition="('${username}'=='cvstaff')">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cvstaff_CHK_Sign_application}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 17:31:03.015" endtime="20220128 17:31:03.016"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Signature Check not required</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220128 17:31:03.017" endtime="20220128 17:31:03.017"/>
+</kw>
+<status status="NOT RUN" starttime="20220128 17:31:03.015" endtime="20220128 17:31:03.017"/>
+</branch>
+<status status="PASS" starttime="20220128 17:31:02.830" endtime="20220128 17:31:03.017"/>
+</if>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:31:03.017" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20220128 17:31:03.017" endtime="20220128 17:31:03.113"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>100s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:32:43.122" level="INFO">Slept 1 minute 40 seconds</msg>
+<status status="PASS" starttime="20220128 17:31:03.113" endtime="20220128 17:32:43.122"/>
+</kw>
+<status status="PASS" starttime="20220128 17:31:02.559" endtime="20220128 17:32:43.123"/>
+</kw>
+<status status="PASS" starttime="20220128 17:24:12.973" endtime="20220128 17:32:43.124"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220128 17:32:43.124" endtime="20220128 17:32:45.516"/>
+</kw>
+<status status="PASS" starttime="20220128 17:24:07.952" endtime="20220128 17:32:45.517"/>
+</test>
+<test id="s1-t2" name="Test case:CV Staff- COMP Application filling in MICAVS">
+<kw name="Open browser1" library="CTS_LoginPageKeywords" type="SETUP">
+<arg>${cts_url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${cts_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220128 17:32:45.521" level="INFO">Opening browser 'chrome' to base url 'https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login'.</msg>
+<status status="PASS" starttime="20220128 17:32:45.521" endtime="20220128 17:32:49.451"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220128 17:32:49.452" endtime="20220128 17:32:49.572"/>
+</kw>
+<status status="PASS" starttime="20220128 17:32:45.521" endtime="20220128 17:32:49.572"/>
+</kw>
+<kw name="Testing xls - Victim and Claimant">
+<arg>cvstaff</arg>
+<arg>cvcs123</arg>
+<arg>MiCAVS-005</arg>
+<arg>COMP2</arg>
+<arg>Citizen-Reg16</arg>
+<arg>01/01/1991</arg>
+<arg>1234567891</arg>
+<arg>Test1@gmail.com</arg>
+<arg>Test add16</arg>
+<arg>Test second add1</arg>
+<arg>walker</arg>
+<arg>49544</arg>
+<arg>24000</arg>
+<arg>C-TL1</arg>
+<arg>C-MM1</arg>
+<arg>C-FS1</arg>
+<arg>01/01/1990</arg>
+<arg>6534243421</arg>
+<arg>C Test frist  ad1</arg>
+<arg>C test second  Add1</arg>
+<arg>Walker1</arg>
+<arg>49557</arg>
+<arg>01/01/2022</arg>
+<arg>'01/03/2022</arg>
+<arg>Test Police</arg>
+<arg>Dan Ploce officer</arg>
+<arg>INC123456</arg>
+<arg>ABC Cinemas</arg>
+<arg>ABC Cinemas</arg>
+<arg>Walker</arg>
+<arg>Explained Briefly about Crime</arg>
+<arg>Yes-Reported after 48 hrs</arg>
+<arg>Reported within year</arg>
+<arg>Offender1</arg>
+<arg>District Court</arg>
+<arg>Case-123456</arg>
+<arg>2000</arg>
+<arg>Case investigation is in progress</arg>
+<arg>Attonery1</arg>
+<arg>6167349080</arg>
+<arg>I got 100 dollars</arg>
+<arg>yes Medical Treatnent required</arg>
+<arg>Aetna</arg>
+<arg>TEST ABC</arg>
+<arg>4444455555</arg>
+<arg>Company add1</arg>
+<arg>Company add2</arg>
+<arg>Test doc</arg>
+<arg>02/03/2021</arg>
+<arg>Test document -PNG</arg>
+<arg>1</arg>
+<kw name="Enter username and Passowrd" library="CTS_LoginPageKeywords">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Txt_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:32:49.576" level="INFO">Typing text 'cvstaff' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20220128 17:32:49.575" endtime="20220128 17:32:49.671"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${TXt_Password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:32:49.672" level="INFO">Typing text 'cvcs123' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220128 17:32:49.671" endtime="20220128 17:32:49.754"/>
+</kw>
+<status status="PASS" starttime="20220128 17:32:49.575" endtime="20220128 17:32:49.754"/>
+</kw>
+<kw name="Click Login button" library="CTS_LoginPageKeywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:32:49.755" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20220128 17:32:49.754" endtime="20220128 17:32:49.806"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:32:59.808" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:32:49.806" endtime="20220128 17:32:59.808"/>
+</kw>
+<status status="PASS" starttime="20220128 17:32:49.754" endtime="20220128 17:32:59.809"/>
+</kw>
+<kw name="Select MiCAVS Window and Click on COMP" library="CTS_LoginPageKeywords">
+<arg>${username}</arg>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${window}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220128 17:32:59.810" endtime="20220128 17:32:59.880"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:33:09.889" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:32:59.880" endtime="20220128 17:33:09.889"/>
+</kw>
+<if>
+<branch type="IF" condition="('${username}'=='user01')">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_comp}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 17:33:09.889" endtime="20220128 17:33:09.889"/>
+</kw>
+<status status="NOT RUN" starttime="20220128 17:33:09.889" endtime="20220128 17:33:09.889"/>
+</branch>
+<branch type="ELSE IF" condition="('${username}'=='cvstaff')">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${link_comp1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:33:09.889" level="INFO">Clicking element 'xpath://*[@id='main_content']/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div[3]/a/div'.</msg>
+<status status="PASS" starttime="20220128 17:33:09.889" endtime="20220128 17:33:10.493"/>
+</kw>
+<status status="PASS" starttime="20220128 17:33:09.889" endtime="20220128 17:33:10.493"/>
+</branch>
+<status status="PASS" starttime="20220128 17:33:09.889" endtime="20220128 17:33:10.493"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>35s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:33:45.510" level="INFO">Slept 35 seconds</msg>
+<status status="PASS" starttime="20220128 17:33:10.493" endtime="20220128 17:33:45.510"/>
+</kw>
+<status status="PASS" starttime="20220128 17:32:59.810" endtime="20220128 17:33:45.511"/>
+</kw>
+<kw name="Enter Victim Information and Claimant details and Click on Next1" library="CTS_LoginPageKeywords">
+<arg>${input_VC_Lastname}</arg>
+<arg>${input_VC_Middlename}</arg>
+<arg>${input_VC_Firstname}</arg>
+<arg>${Input_VC_Date}</arg>
+<arg>${input_vc_cntnum}</arg>
+<arg>${input_vc_emailadd}</arg>
+<arg>${input_vc_vcadd1}</arg>
+<arg>${input_vc_vcadd2}</arg>
+<arg>${input_VC_VCCity}</arg>
+<arg>${input_VC_VCZipcode}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<arg>${input_Clmn_Lastname}</arg>
+<arg>${input_Clmn_Middlename}</arg>
+<arg>${input_Clmn_Firsttname}</arg>
+<arg>${Input_Clmn_DOB}</arg>
+<arg>${input_Clmn_cntnum}</arg>
+<arg>${input_Clmn_add1}</arg>
+<arg>${input_Clmn_add2}</arg>
+<arg>${input_Clmn_City}</arg>
+<arg>${input_Clmn_Zipcode}</arg>
+<arg>${Test}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Lastname}</arg>
+<arg>${input_VC_Lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:33:45.511" level="INFO">Typing text 'MiCAVS-005' into text field 'id:lastname'.</msg>
+<status status="PASS" starttime="20220128 17:33:45.511" endtime="20220128 17:33:45.661"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Middlename}</arg>
+<arg>${input_VC_Middlename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:33:45.661" level="INFO">Typing text 'COMP2' into text field 'id:middlename'.</msg>
+<status status="PASS" starttime="20220128 17:33:45.661" endtime="20220128 17:33:45.742"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Firstname}</arg>
+<arg>${input_VC_Firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:33:45.742" level="INFO">Typing text 'Citizen-Reg16' into text field 'id:firstname'.</msg>
+<status status="PASS" starttime="20220128 17:33:45.742" endtime="20220128 17:33:45.838"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Date}</arg>
+<arg>${Input_VC_Date}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:33:45.838" level="INFO">Typing text '01/01/1991' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[6]/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:33:45.838" endtime="20220128 17:33:45.933"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:34:00.955" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:33:45.933" endtime="20220128 17:34:00.956"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_ssn}</arg>
+<arg>1234567890</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:00.957" level="INFO">Typing text '1234567890' into text field 'id:socialSecurityNumber'.</msg>
+<status status="PASS" starttime="20220128 17:34:00.956" endtime="20220128 17:34:01.100"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_MaritalStatus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:01.100" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[9]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:34:01.100" endtime="20220128 17:34:01.156"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_Item_Married}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:01.156" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[9]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[2]/li'.</msg>
+<status status="PASS" starttime="20220128 17:34:01.156" endtime="20220128 17:34:01.201"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_cntnum}</arg>
+<arg>${input_vc_cntnum}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:01.201" level="INFO">Typing text '1234567891' into text field 'id:contactNumber'.</msg>
+<status status="PASS" starttime="20220128 17:34:01.201" endtime="20220128 17:34:01.283"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>{testing starts}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220128 17:34:01.283" endtime="20220128 17:34:01.284"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_Gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:01.284" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[11]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:34:01.284" endtime="20220128 17:34:01.342"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_Item_Male}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:01.342" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[1]/div[11]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[2]/li'.</msg>
+<status status="PASS" starttime="20220128 17:34:01.342" endtime="20220128 17:34:01.385"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:34:03.389" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220128 17:34:01.385" endtime="20220128 17:34:03.389"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${rb_US_mail_add_no}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:34:03.390" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[2]/div[3]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:34:03.389" endtime="20220128 17:34:04.042"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${rb_US_mail_add_yes}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:34:04.042" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[2]/div[2]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:34:04.042" endtime="20220128 17:34:04.638"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_vcadd1}</arg>
+<arg>${input_vc_vcadd1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:04.638" level="INFO">Typing text 'Test add16' into text field 'id:address1'.</msg>
+<status status="PASS" starttime="20220128 17:34:04.638" endtime="20220128 17:34:04.743"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_VCAdd2}</arg>
+<arg>${input_vc_vcadd2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:04.744" level="INFO">Typing text 'Test second add1' into text field 'id:address2'.</msg>
+<status status="PASS" starttime="20220128 17:34:04.743" endtime="20220128 17:34:04.849"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_VCCity}</arg>
+<arg>${input_VC_VCCity}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:04.849" level="INFO">Typing text 'walker' into text field 'id:city1'.</msg>
+<status status="PASS" starttime="20220128 17:34:04.849" endtime="20220128 17:34:04.930"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:34:19.932" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:34:04.930" endtime="20220128 17:34:19.932"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_Down_State}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:19.934" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[4]/div/div[5]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:34:19.933" endtime="20220128 17:34:20.019"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_item_michigan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:20.020" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-victim/form[1]/div[2]/div[4]/div/div[5]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[22]/li'.</msg>
+<status status="PASS" starttime="20220128 17:34:20.020" endtime="20220128 17:34:20.069"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_VCZipcode}</arg>
+<arg>${input_VC_VCZipcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:20.069" level="INFO">Typing text '49544' into text field 'id:zipCode1'.</msg>
+<status status="PASS" starttime="20220128 17:34:20.069" endtime="20220128 17:34:20.158"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Test}' == '1'</arg>
+<arg>Victim and Claimant Physically injured_RB_YES</arg>
+<arg>${input_vc_emailadd}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<arg>ELSE</arg>
+<arg>Victim and Claimant Physically injured_RB_NO</arg>
+<arg>${input_Clmn_Lastname}</arg>
+<arg>${input_Clmn_Middlename}</arg>
+<arg>${input_Clmn_Firsttname}</arg>
+<arg>${Input_Clmn_DOB}</arg>
+<arg>${input_Clmn_cntnum}</arg>
+<arg>${input_Clmn_add1}</arg>
+<arg>${input_Clmn_add2}</arg>
+<arg>${input_Clmn_City}</arg>
+<arg>${input_Clmn_Zipcode}</arg>
+<arg>${input_vc_emailadd}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Victim and Claimant Physically injured_RB_YES" library="CTS_LoginPageKeywords">
+<arg>${input_vc_emailadd}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="step-buttons"]/div[2]/div/app-victim/form[2]/div[1]/form[1]/div/div/div/div[3]/roots-radiobutton/div/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:20.159" level="INFO">Clicking element 'xpath://*[@id="step-buttons"]/div[2]/div/app-victim/form[2]/div[1]/form[1]/div/div/div/div[3]/roots-radiobutton/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:34:20.159" endtime="20220128 17:34:20.217"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${text_emailadd}</arg>
+<arg>${input_vc_emailadd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:20.218" level="INFO">Typing text 'Test1@gmail.com' into text field 'id:address'.</msg>
+<status status="PASS" starttime="20220128 17:34:20.217" endtime="20220128 17:34:20.318"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_AnnualInc}</arg>
+<arg>${input_VC_AnnualInc}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:20.318" level="INFO">Typing text '24000' into text field 'id:annualIncome'.</msg>
+<status status="PASS" starttime="20220128 17:34:20.318" endtime="20220128 17:34:20.412"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:20.413" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:34:20.412" endtime="20220128 17:34:20.483"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:34:45.491" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220128 17:34:20.483" endtime="20220128 17:34:45.491"/>
+</kw>
+<status status="PASS" starttime="20220128 17:34:20.158" endtime="20220128 17:34:45.492"/>
+</kw>
+<status status="PASS" starttime="20220128 17:34:20.158" endtime="20220128 17:34:45.492"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:34:55.501" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:34:45.492" endtime="20220128 17:34:55.501"/>
+</kw>
+<status status="PASS" starttime="20220128 17:33:45.511" endtime="20220128 17:34:55.502"/>
+</kw>
+<kw name="Enter COMP - Crime Information details and Clcik on Next" library="CTS_LoginPageKeywords">
+<arg>${input_Date_of_Crime}</arg>
+<arg>${input_Date_Crime_Reported}</arg>
+<arg>${input_Text_Police_or_Agency_Reported}</arg>
+<arg>${input_Text_Police_or_Agency_COntactName}</arg>
+<arg>${input_Text_Incident_number}</arg>
+<arg>${input_Text_Location_Of_Crime}</arg>
+<arg>${input_Text_Location_Of_Crime}</arg>
+<arg>${input_Text_City}</arg>
+<arg>${input_Text_Brief_Desc_Crime}</arg>
+<arg>${input_Text_Crime_was_not_Reported_to_police_3to48hrs}</arg>
+<arg>${input_Text_Not_filingCase_Within1year}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${DP_Type_Crime}</arg>
+<arg>80s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220128 17:34:55.504" endtime="20220128 17:34:55.580"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Type_Crime}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:34:55.580" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[1]/div[1]/div/roots-dropdown/div'.</msg>
+<status status="PASS" starttime="20220128 17:34:55.580" endtime="20220128 17:34:55.644"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:35:00.652" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220128 17:34:55.644" endtime="20220128 17:35:00.652"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Value_Vehicleclaim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:00.654" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[1]/div[1]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[4]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:35:00.654" endtime="20220128 17:35:00.761"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_Caused_Person_NO}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:35:00.762" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[2]/div/div/div/div[2]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:35:00.761" endtime="20220128 17:35:01.336"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Date_of_Crime}</arg>
+<arg>${input_Date_of_Crime}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:01.337" level="INFO">Typing text '01/01/2022' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[3]/div[1]/div/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:35:01.336" endtime="20220128 17:35:01.472"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Date_Crime_Reported}</arg>
+<arg>${input_Date_Crime_Reported}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:01.472" level="INFO">Typing text ''01/03/2022' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[3]/div[2]/div/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:35:01.472" endtime="20220128 17:35:01.572"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_County_Crime_OCCured}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:01.573" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[3]/div[3]/div/roots-dropdown/div/div[3]'.</msg>
+<status status="PASS" starttime="20220128 17:35:01.572" endtime="20220128 17:35:01.632"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Value_ALCONA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:01.632" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[3]/div[3]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[42]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:35:01.632" endtime="20220128 17:35:01.695"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:35:06.716" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220128 17:35:01.695" endtime="20220128 17:35:06.716"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Police_or_Agency_Reported}</arg>
+<arg>${input_Text_Police_or_Agency_Reported}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:06.717" level="INFO">Typing text 'Test Police' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-crime/div[2]/form/div[4]/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:35:06.717" endtime="20220128 17:35:06.886"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:35:31.891" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220128 17:35:06.886" endtime="20220128 17:35:31.891"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Police_or_Agency_COntactName}</arg>
+<arg>${input_Text_Police_or_Agency_COntactName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:31.893" level="INFO">Typing text 'Dan Ploce officer' into text field 'id:repAgency'.</msg>
+<status status="PASS" starttime="20220128 17:35:31.892" endtime="20220128 17:35:32.030"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Incident_number}</arg>
+<arg>${input_Text_Incident_number}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.031" level="INFO">Typing text 'INC123456' into text field 'id:incidentNumber'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.031" endtime="20220128 17:35:32.114"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Location_Of_Crime}</arg>
+<arg>${input_Text_Location_Of_Crime}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.115" level="INFO">Typing text 'ABC Cinemas' into text field 'id:crimeLocation'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.114" endtime="20220128 17:35:32.202"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_City}</arg>
+<arg>${input_Text_City}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.202" level="INFO">Typing text 'Walker' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-crime/div[2]/form/div[5]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.202" endtime="20220128 17:35:32.283"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_state}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.283" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[5]/div[3]/div/roots-dropdown/div'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.283" endtime="20220128 17:35:32.338"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Value_Michigan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.338" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[5]/div[3]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[22]/li/span'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.338" endtime="20220128 17:35:32.385"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Brief_Desc_Crime}</arg>
+<arg>${input_Text_Brief_Desc_Crime}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.386" level="INFO">Typing text 'Explained Briefly about Crime' into text field 'id:crimeDesc'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.385" endtime="20220128 17:35:32.494"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Crime_was_not_Reported_to_police_3to48hrs}</arg>
+<arg>${input_Text_Crime_was_not_Reported_to_police_3to48hrs}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.494" level="INFO">Typing text 'Yes-Reported after 48 hrs' into text field 'id:delayReason'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.494" endtime="20220128 17:35:32.615"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Not_filingCase_Within1year}</arg>
+<arg>${input_Text_Not_filingCase_Within1year}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.615" level="INFO">Typing text 'Reported within year' into text field 'id:delayReasonClaim'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.615" endtime="20220128 17:35:32.712"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Chk_Attorney}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.713" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[10]/div[1]/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.713" endtime="20220128 17:35:32.766"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Race_Ethnic_Background}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.767" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[10]/div[2]/div[1]/div/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.766" endtime="20220128 17:35:32.814"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DP_Item_Asain}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:32.814" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[10]/div[2]/div[1]/div/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[2]/li'.</msg>
+<status status="PASS" starttime="20220128 17:35:32.814" endtime="20220128 17:35:32.862"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_BEFORE_Crime}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:35:32.863" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-crime/div[2]/form/div[10]/div[2]/div[2]/div/div[2]/div/roots-radiobutton[1]/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:35:32.862" endtime="20220128 17:35:33.479"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:33.480" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:35:33.479" endtime="20220128 17:35:33.547"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:35:53.550" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20220128 17:35:33.547" endtime="20220128 17:35:53.550"/>
+</kw>
+<status status="PASS" starttime="20220128 17:34:55.502" endtime="20220128 17:35:53.551"/>
+</kw>
+<kw name="Enter COMP - R&amp;R details and Click on Next" library="CTS_LoginPageKeywords">
+<arg>${input_Text_Name_Offender}</arg>
+<arg>${input_Text_Name_Of_Court}</arg>
+<arg>${input_Text_Court_CaseNumber}</arg>
+<arg>${input_Text_Amnt_Ordered}</arg>
+<arg>${Input_Text_Pls_Explain}</arg>
+<arg>${input_Text_Name_Of_Attonery}</arg>
+<arg>${input_Text_Attonery_Telephone}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Name_Offender}</arg>
+<arg>${input_Text_Name_Offender}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:35:53.556" level="INFO">Typing text 'Offender1' into text field 'id:offenderName'.</msg>
+<status status="PASS" starttime="20220128 17:35:53.555" endtime="20220128 17:35:53.666"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:36:03.681" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:35:53.666" endtime="20220128 17:36:03.681"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>{system is ready to clcik Radio button}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220128 17:36:03.682" endtime="20220128 17:36:03.682"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_OFN_Chrd_In_CC_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:03.685" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-rest-recovery/form/div[1]/div/div[3]/div[2]/div/roots-radiobutton/div/div[2]/span' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:03.682" endtime="20220128 17:36:04.324"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:36:19.324" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:36:04.324" endtime="20220128 17:36:19.324"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Name_Of_Court}</arg>
+<arg>${input_Text_Name_Of_Court}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:19.326" level="INFO">Typing text 'District Court' into text field 'xpath://*[@id='courtName']'.</msg>
+<status status="PASS" starttime="20220128 17:36:19.325" endtime="20220128 17:36:19.524"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Court_CaseNumber}</arg>
+<arg>${input_Text_Court_CaseNumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:19.525" level="INFO">Typing text 'Case-123456' into text field 'xpath://*[@id='courtCase']'.</msg>
+<status status="PASS" starttime="20220128 17:36:19.524" endtime="20220128 17:36:19.610"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_CRT_ORDR_OFND_PAY_RES_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:19.611" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-rest-recovery/form[1]/div/div/div[5]/div[1]/div/div/div[1]/roots-radiobutton/div' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:19.611" endtime="20220128 17:36:20.198"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Amnt_Ordered}</arg>
+<arg>${input_Text_Amnt_Ordered}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:20.198" level="INFO">Typing text '2000' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-rest-recovery/form[1]/div/div/div[5]/div[2]/div/div/input '.</msg>
+<status status="PASS" starttime="20220128 17:36:20.198" endtime="20220128 17:36:20.286"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_Civil_Court_action_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:20.286" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-rest-recovery/form/div[1]/div/div[6]/div[1]/div/div[1]/div/roots-radiobutton/div/div[2]/span' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:20.286" endtime="20220128 17:36:20.877"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Pls_Explain}</arg>
+<arg>${Input_Text_Pls_Explain}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:20.878" level="INFO">Typing text 'Case investigation is in progress' into text field 'xpath://*[@id='settleDesc']'.</msg>
+<status status="PASS" starttime="20220128 17:36:20.877" endtime="20220128 17:36:21.008"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_Settlement_NO}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:21.008" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-rest-recovery/form/div[1]/div/div[7]/div/div/div/div[2]/roots-radiobutton/div/div[2]/span' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:21.008" endtime="20220128 17:36:21.601"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Name_Of_Attonery}</arg>
+<arg>${input_Text_Name_Of_Attonery}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:21.603" level="INFO">Typing text 'Attonery1' into text field 'id:attorName'.</msg>
+<status status="PASS" starttime="20220128 17:36:21.602" endtime="20220128 17:36:21.704"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Attonery_Telephone}</arg>
+<arg>${input_Text_Attonery_Telephone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:21.704" level="INFO">Typing text '6167349080' into text field 'id:attorneyPhoneNumber'.</msg>
+<status status="PASS" starttime="20220128 17:36:21.704" endtime="20220128 17:36:21.795"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:36:24.805" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220128 17:36:21.797" endtime="20220128 17:36:24.806"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:24.807" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:36:24.807" endtime="20220128 17:36:24.897"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:36:34.902" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:36:24.898" endtime="20220128 17:36:34.902"/>
+</kw>
+<status status="PASS" starttime="20220128 17:35:53.552" endtime="20220128 17:36:34.903"/>
+</kw>
+<kw name="Enter COMP - Claim Determination details and Click on next" library="CTS_LoginPageKeywords">
+<arg>${input_Text_VC_CHarity_care_pay_DON1}</arg>
+<arg>${Input_Text_ad_med_Trt_Required}</arg>
+<arg>${input_Text_Primary_Medical_Insurer}</arg>
+<arg>${input_Text_Victim_Employer_Name}</arg>
+<arg>${input_Victim_Employer_Ph_Num}</arg>
+<arg>${input_Text_Employer_Add1}</arg>
+<arg>${input_Text_Employer_Address2}</arg>
+<arg>${input_Text_Doctor_who_will_verify_medical_disability}</arg>
+<arg>${input_Text_From}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>10S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:36:44.915" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:36:34.907" endtime="20220128 17:36:44.915"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Medical_Expense_Benefits_Victim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:44.917" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[1]/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:36:44.917" endtime="20220128 17:36:45.015"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_MIN_LOSSOF200_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:45.015" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[2]/div[1]/div/div[2]/div/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:45.015" endtime="20220128 17:36:45.607"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_LOST_TWO_CNT_EARN_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:45.608" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[2]/div[2]/div/div[2]/div/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:45.607" endtime="20220128 17:36:46.210"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_CRIMINAL_SA_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:46.211" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[3]/div[1]/div/div[2]/div/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:46.210" endtime="20220128 17:36:46.792"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_RTD_AGE_DIS_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:46.793" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[1]/div[2]/div[3]/div[2]/div/div[2]/div/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:46.792" endtime="20220128 17:36:47.368"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:36:57.378" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:36:47.368" endtime="20220128 17:36:57.378"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Health_Insurance1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:57.379" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[1]/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:36:57.379" endtime="20220128 17:36:57.458"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Medicare1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:57.458" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[1]/div[3]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:36:57.458" endtime="20220128 17:36:57.505"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Automobile_Insurance1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:36:57.506" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[1]/div[4]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:36:57.506" endtime="20220128 17:36:57.551"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_Ch_PA_DO_OT_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:36:57.552" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[2]/div/div/div/div[1]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:36:57.551" endtime="20220128 17:36:58.114"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:37:01.127" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220128 17:36:58.115" endtime="20220128 17:37:01.127"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_VC_CHarity_care_pay_DON1}</arg>
+<arg>${input_Text_VC_CHarity_care_pay_DON1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:01.129" level="INFO">Typing text 'I got 100 dollars' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-claim/form[2]/div[2]/div[2]/div/div/div/div[1]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:37:01.128" endtime="20220128 17:37:01.301"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_MED_TRT_YES}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:37:01.302" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[2]/div[2]/div[3]/div/div/div/div/div[1]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:37:01.301" endtime="20220128 17:37:01.873"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_ad_med_Trt_Required}</arg>
+<arg>${Input_Text_ad_med_Trt_Required}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:01.874" level="INFO">Typing text 'yes Medical Treatnent required' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-claim/form[2]/div[2]/div[3]/div/div/div/div[2]/div/div/textarea'.</msg>
+<status status="PASS" starttime="20220128 17:37:01.873" endtime="20220128 17:37:01.988"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Primary_Medical_Insurer}</arg>
+<arg>${input_Text_Primary_Medical_Insurer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:01.988" level="INFO">Typing text 'Aetna' into text field 'xpath://*[@id='primaryInsurer']'.</msg>
+<status status="PASS" starttime="20220128 17:37:01.988" endtime="20220128 17:37:02.071"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Victim_Employer_Name}</arg>
+<arg>${input_Text_Victim_Employer_Name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:02.072" level="INFO">Typing text 'TEST ABC' into text field 'id:victimEmployer'.</msg>
+<status status="PASS" starttime="20220128 17:37:02.072" endtime="20220128 17:37:02.156"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Victim_Employer_Ph_Num1}</arg>
+<arg>${input_Victim_Employer_Ph_Num}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:02.157" level="INFO">Typing text '4444455555' into text field 'id:employeerPhoneNumber'.</msg>
+<status status="PASS" starttime="20220128 17:37:02.156" endtime="20220128 17:37:02.260"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Employer_Add1}</arg>
+<arg>${input_Text_Employer_Add1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:02.260" level="INFO">Typing text 'Company add1' into text field 'xpath://*[@id='empAddress']'.</msg>
+<status status="PASS" starttime="20220128 17:37:02.260" endtime="20220128 17:37:02.355"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Employer_Add2}</arg>
+<arg>${input_Text_Employer_Address2}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:02.355" level="INFO">Typing text 'Company add2' into text field 'xpath://*[@id='empAddress2']'.</msg>
+<status status="PASS" starttime="20220128 17:37:02.355" endtime="20220128 17:37:02.440"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Doctor_who_will_verify_medical_disability}</arg>
+<arg>${input_Text_Doctor_who_will_verify_medical_disability}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:02.441" level="INFO">Typing text 'Test doc' into text field 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-claim/form[4]/div[2]/div[2]/div[3]/div/input'.</msg>
+<status status="PASS" starttime="20220128 17:37:02.440" endtime="20220128 17:37:02.531"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_From}</arg>
+<arg>${input_Text_From}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:02.531" level="INFO">Typing text '02/03/2021' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[4]/div[2]/div[3]/div/div/div[1]/div/roots-calendar/span/input'.</msg>
+<status status="PASS" starttime="20220128 17:37:02.531" endtime="20220128 17:37:02.631"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>${RB_TO_PRESENT}</arg>
+<arg>7</arg>
+<arg>6</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220128 17:37:02.631" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[4]/div[2]/div[3]/div/div/div[2]/div/div/div[2]/roots-radiobutton/div/div[2]' at coordinates x=7, y=6.</msg>
+<status status="PASS" starttime="20220128 17:37:02.631" endtime="20220128 17:37:03.201"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_NONE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:03.202" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-claim/form[4]/div[2]/div[4]/div[5]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:37:03.202" endtime="20220128 17:37:03.255"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:03.255" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:37:03.255" endtime="20220128 17:37:03.332"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:37:28.335" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220128 17:37:03.332" endtime="20220128 17:37:28.335"/>
+</kw>
+<status status="PASS" starttime="20220128 17:36:34.903" endtime="20220128 17:37:28.337"/>
+</kw>
+<kw name="Enter and add COMP - Documents and click on next" library="CTS_LoginPageKeywords">
+<arg>${input_Text_Document_name}</arg>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>0</value>
+<value>2</value>
+<iter>
+<var name="${i}">0</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_Document_type}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:28.337" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[2]/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:37:28.337" endtime="20220128 17:37:28.421"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_down_itemized_bill}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:28.422" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[2]/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[1]/li'.</msg>
+<status status="PASS" starttime="20220128 17:37:28.421" endtime="20220128 17:37:28.467"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Document_name}</arg>
+<arg>${input_Text_Document_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:28.467" level="INFO">Typing text 'Test document -PNG' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[3]/input'.</msg>
+<status status="PASS" starttime="20220128 17:37:28.467" endtime="20220128 17:37:28.553"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:37:43.562" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:37:28.554" endtime="20220128 17:37:43.563"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Browse}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:37:43.564" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[4]/div/roots-fileupload/span'.</msg>
+<status status="PASS" starttime="20220128 17:37:43.563" endtime="20220128 17:37:43.652"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:37:53.676" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:37:43.652" endtime="20220128 17:37:53.677"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>C:\\Users\\Bhanu.Battu\\Documents\\File.exe</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20220128 17:37:53.721" level="INFO">AutoItLibrary.Run(FileName='C:\Users\Bhanu.Battu\Documents\File.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20220128 17:37:53.677" endtime="20220128 17:37:53.722"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:38:03.738" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:37:53.722" endtime="20220128 17:38:03.738"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button_Upload}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:38:03.739" level="INFO">Clicking button 'Upload'.</msg>
+<status status="PASS" starttime="20220128 17:38:03.738" endtime="20220128 17:38:03.838"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:38:13.853" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:38:03.838" endtime="20220128 17:38:13.853"/>
+</kw>
+<status status="PASS" starttime="20220128 17:37:28.337" endtime="20220128 17:38:13.854"/>
+</iter>
+<iter>
+<var name="${i}">1</var>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${drop_down_Document_type}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:38:13.854" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[2]/roots-dropdown/div/div[3]/label'.</msg>
+<status status="PASS" starttime="20220128 17:38:13.854" endtime="20220128 17:38:13.960"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drop_down_itemized_bill}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:38:13.961" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[2]/roots-dropdown/div/div[5]/div/ul/roots-dropdownitem[1]/li'.</msg>
+<status status="PASS" starttime="20220128 17:38:13.960" endtime="20220128 17:38:14.008"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Text_Document_name}</arg>
+<arg>${input_Text_Document_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220128 17:38:14.008" level="INFO">Typing text 'Test document -PNG' into text field 'xpath://*[@id='step-buttons']/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[3]/input'.</msg>
+<status status="PASS" starttime="20220128 17:38:14.008" endtime="20220128 17:38:14.089"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:38:29.097" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220128 17:38:14.090" endtime="20220128 17:38:29.097"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Browse}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:38:29.098" level="INFO">Clicking element 'xpath:/html/body/app-root/div/app-secured/section/app-steps/div/section/div/div[2]/div/app-income/div[1]/form/div/div/div[2]/div/div[4]/div/roots-fileupload/span'.</msg>
+<status status="PASS" starttime="20220128 17:38:29.097" endtime="20220128 17:38:29.154"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:38:39.164" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:38:29.154" endtime="20220128 17:38:39.164"/>
+</kw>
+<kw name="Run" library="AutoItLibrary">
+<arg>C:\\Users\\Bhanu.Battu\\Documents\\File.exe</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<msg timestamp="20220128 17:38:39.174" level="INFO">AutoItLibrary.Run(FileName='C:\Users\Bhanu.Battu\Documents\File.exe', WorkingDir='', Flag='')</msg>
+<status status="PASS" starttime="20220128 17:38:39.164" endtime="20220128 17:38:39.174"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:38:49.191" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:38:39.174" endtime="20220128 17:38:49.191"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button_Upload}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:38:49.192" level="INFO">Clicking button 'Upload'.</msg>
+<status status="PASS" starttime="20220128 17:38:49.192" endtime="20220128 17:38:49.267"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:38:59.276" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220128 17:38:49.267" endtime="20220128 17:38:59.276"/>
+</kw>
+<status status="PASS" starttime="20220128 17:38:13.854" endtime="20220128 17:38:59.277"/>
+</iter>
+<status status="PASS" starttime="20220128 17:37:28.337" endtime="20220128 17:38:59.277"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_savenext}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:38:59.277" level="INFO">Clicking button 'Save &amp; Next'.</msg>
+<status status="PASS" starttime="20220128 17:38:59.277" endtime="20220128 17:38:59.478"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:39:29.493" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20220128 17:38:59.478" endtime="20220128 17:39:29.493"/>
+</kw>
+<status status="PASS" starttime="20220128 17:37:28.337" endtime="20220128 17:39:29.494"/>
+</kw>
+<kw name="Ente COMP-Agreement Page and Click on submit" library="CTS_LoginPageKeywords">
+<arg>${username}</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Auth}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:39:29.498" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[3]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:39:29.497" endtime="20220128 17:39:29.634"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_REPAYMENT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:39:29.635" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[4]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:39:29.634" endtime="20220128 17:39:29.699"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_Financial}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:39:29.699" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[1]/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:39:29.699" endtime="20220128 17:39:29.773"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CHK_DECLARATION}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:39:29.774" level="INFO">Clicking element 'xpath://*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[2]/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:39:29.774" endtime="20220128 17:39:29.878"/>
+</kw>
+<if>
+<branch type="IF" condition="('${username}'=='user01')">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${User01_CHK_Sign_application}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 17:39:29.880" endtime="20220128 17:39:29.880"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="step-buttons"]/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[3]/div/div[1]/input</arg>
+<arg>Bhanu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220128 17:39:29.880" endtime="20220128 17:39:29.880"/>
+</kw>
+<status status="NOT RUN" starttime="20220128 17:39:29.879" endtime="20220128 17:39:29.880"/>
+</branch>
+<branch type="ELSE IF" condition="('${username}'=='cvstaff')">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Cvstaff_CHK_Sign_application}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220128 17:39:29.881" level="INFO">Clicking element '//*[@id='step-buttons']/div[2]/div/app-agreement/div[2]/form/div/div[5]/div[3]/div/div/roots-checkbox/div/div[2]'.</msg>
+<status status="PASS" starttime="20220128 17:39:29.881" endtime="20220128 17:39:29.976"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Signature Check not required</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220128 17:39:29.976" endtime="20220128 17:39:29.977"/>
+</kw>
+<status status="PASS" starttime="20220128 17:39:29.880" endtime="20220128 17:39:29.977"/>
+</branch>
+<status status="PASS" starttime="20220128 17:39:29.879" endtime="20220128 17:39:29.977"/>
+</if>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${Button_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220128 17:39:29.978" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20220128 17:39:29.978" endtime="20220128 17:39:30.108"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>100s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220128 17:41:10.109" level="INFO">Slept 1 minute 40 seconds</msg>
+<status status="PASS" starttime="20220128 17:39:30.108" endtime="20220128 17:41:10.109"/>
+</kw>
+<status status="PASS" starttime="20220128 17:39:29.495" endtime="20220128 17:41:10.110"/>
+</kw>
+<status status="PASS" starttime="20220128 17:32:49.573" endtime="20220128 17:41:10.110"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220128 17:41:10.111" endtime="20220128 17:41:12.611"/>
+</kw>
+<status status="PASS" starttime="20220128 17:32:45.520" endtime="20220128 17:41:12.611"/>
+</test>
+<status status="PASS" starttime="20220128 17:24:06.867" endtime="20220128 17:41:12.617"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Excel Test">Excel Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220128 17:32:45.518" level="WARN">Multiple test cases with name 'Test case:CV Staff- COMP Application filling in MICAVS' executed in test suite 'Excel Test'.</msg>
+</errors>
+</robot>

@@ -1,0 +1,52 @@
+==============================================================================
+Administration                                                                
+==============================================================================
+Administration.Search Userrole :: MiCAVS WEB APPLICATION TESTING              
+==============================================================================
+Test Case : Manage User Roles-Search                                  Admin Dashboard page navigated to Admmin Module
+Click Manage user roles on left pane of page
+Analyst
+Role Name value Analyst not in Role Name Dropdown:1st loop
+Role Name value Analyst not in Role Name Dropdown:2st loop
+Role Name value Analyst not in Role Name Dropdown:3st loop
+Role Name value Analyst not in Role Name Dropdown:4st loop
+Role Name value Analyst not in Role Name Dropdown:5st loop
+Role Name value Analyst not in Role Name Dropdown:6st loop
+Role Name value Analyst not in Role Name Dropdown:7st loop
+Role Name value Analyst not in Role Name Dropdown:8st loop
+1.0
+1
+4
+Analyst : COMP AND SAFE Analyst
+Pagination:0.0
+| PASS |
+------------------------------------------------------------------------------
+Test Case : Manage User Roles-Search                                  | FAIL |
+Setup failed:
+WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+------------------------------------------------------------------------------
+Test Case : Manage User Roles-Search                                  Admin Dashboard page navigated to Admmin Module
+Click Manage user roles on left pane of page
+Role Name value Compensation Manager not in Role Name Dropdown:0st loop
+Role Name value Compensation Manager not in Role Name Dropdown:1st loop
+Compensation Manager
+Role Name value Compensation Manager not in Role Name Dropdown:3st loop
+Role Name value Compensation Manager not in Role Name Dropdown:4st loop
+Role Name value Compensation Manager not in Role Name Dropdown:5st loop
+Role Name value Compensation Manager not in Role Name Dropdown:6st loop
+Role Name value Compensation Manager not in Role Name Dropdown:7st loop
+Role Name value Compensation Manager not in Role Name Dropdown:8st loop
+1.0
+1
+4
+Compensation Manager : Compensation Manager
+Pagination:0.0
+| PASS |
+------------------------------------------------------------------------------
+Administration.Search Userrole :: MiCAVS WEB APPLICATION TESTING      | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Administration                                                        | FAIL |
+3 tests, 2 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Bhanu.Battu\PycharmProjects\TestProject\Results\pabot_results\4\output.xml

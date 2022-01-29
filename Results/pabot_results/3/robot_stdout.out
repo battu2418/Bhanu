@@ -1,0 +1,72 @@
+==============================================================================
+Administration                                                                
+==============================================================================
+Administration.Admin-ManageRFI Codes :: MiCAVS WEB APPLICATION TESTING        
+==============================================================================
+Veriy Administartion - Existing - Admin Manage Organizations detai... **** Test Case -3.1 is started ****
+Admin Dashboard page navigated to Admmin Module
+Click Manage RFI Codes on left pane of page
+Total number of existing user roles : 49
+4.9
+10
+5
+R01 : COMP
+R02 : COMP
+R03 : COMP
+R04 : COMP
+R05 : COMP
+R06 : COMP
+R07 : COMP
+R08 : COMP
+R09 : COMP
+Pagination:0.0
+R11 : COMP
+R12 : COMP
+R13 : COMP
+R14 : COMP
+R15 : COMP
+R16 : COMP
+R17 : COMP
+R18 : COMP
+R19 : COMP
+Pagination:1.0
+R21 : COMP
+R22 : COMP
+R23 : COMP
+R24 : COMP
+R25 : COMP
+R26 : COMP
+R27 : COMP
+R28 : COMP
+R29 : COMP
+Pagination:2.0
+R31 : COMP
+R32 : COMP
+R33 : COMP
+R34 : COMP
+R35 : COMP
+R36 : COMP
+R37 : COMP
+R38 : COMP
+R39 : COMP
+Pagination:3.0
+R56 : COMP
+R99 : COMP
+X01 : SAFE
+X02 : SAFE
+X03 : SAFE
+X04 : SAFE
+X05 : SAFE
+X06 : SAFE
+X07 : SAFE
+Pagination:4.0
+**** Test case is Passed *****
+| PASS |
+------------------------------------------------------------------------------
+Administration.Admin-ManageRFI Codes :: MiCAVS WEB APPLICATION TES... | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Administration                                                        | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Bhanu.Battu\PycharmProjects\TestProject\Results\pabot_results\3\output.xml

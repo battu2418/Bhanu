@@ -1,0 +1,14 @@
+[ ERROR ] Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Bhanu.Battu\automation\Scripts\robot.exe
+  c:\users\bhanu.battu\automation\python39.zip
+  c:\users\bhanu.battu\automation\DLLs
+  c:\users\bhanu.battu\automation\lib
+  c:\users\bhanu.battu\automation
+  C:\Users\Bhanu.Battu\AppData\Roaming\Python\Python39\site-packages
+  c:\users\bhanu.battu\automation\lib\site-packages
+  c:\users\bhanu.battu\automation\lib\site-packages\win32
+  c:\users\bhanu.battu\automation\lib\site-packages\win32\lib
+  c:\users\bhanu.battu\automation\lib\site-packages\Pythonwin

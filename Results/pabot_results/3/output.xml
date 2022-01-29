@@ -1,0 +1,2332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.6 on win32)" generated="20220125 17:52:15.658" rpa="false" schemaversion="2">
+<suite id="s1" name="Administration" source="C:\Users\Bhanu.Battu\PycharmProjects\TestProject\TestCases\Administration">
+<suite id="s1-s1" name="Admin-ManageRFI Codes" source="C:\Users\Bhanu.Battu\PycharmProjects\TestProject\TestCases\Administration\Admin-ManageRFI_Codes.robot">
+<test id="s1-s1-t1" name="Veriy Administartion - Existing - Admin Manage Organizations details in all web table pages">
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test Case -3.1 is started ****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:52:15.983" endtime="20220125 17:52:15.984"/>
+</kw>
+<kw name="Open CTS Portal to Login">
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220125 17:52:15.985" level="INFO">Opening browser 'chrome' to base url 'https://htcinc-cloud.caretech.com/cvcs/portal/#/cz/login'.</msg>
+<status status="PASS" starttime="20220125 17:52:15.984" endtime="20220125 17:52:20.179"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220125 17:52:20.180" endtime="20220125 17:52:20.517"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:15.984" endtime="20220125 17:52:20.518"/>
+</kw>
+<kw name="Enter Admin Crendetials in CTS Login Page">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input</arg>
+<arg>LauC</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:20.519" level="INFO">Typing text 'LauC' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20220125 17:52:20.518" endtime="20220125 17:52:20.814"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input</arg>
+<arg>cvcs123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:20.814" level="INFO">Typing text 'cvcs123' into text field 'xpath://*[@id='main_content']/app-login/div[2]/div/div[2]/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20220125 17:52:20.814" endtime="20220125 17:52:20.930"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:52:21.166" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:52:20.930" endtime="20220125 17:52:21.166"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:21.166" level="INFO">Clicking button 'Login'.</msg>
+<status status="PASS" starttime="20220125 17:52:21.166" endtime="20220125 17:52:21.234"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:20.518" endtime="20220125 17:52:21.234"/>
+</kw>
+<kw name="Admin DASHBOARD in CTS">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=MICAVS</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220125 17:52:21.234" endtime="20220125 17:52:21.294"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>25s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:52:46.308" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" starttime="20220125 17:52:21.294" endtime="20220125 17:52:46.308"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:52:46.484" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:52:46.308" endtime="20220125 17:52:46.484"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div/a/div</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:46.484" level="INFO">Clicking element 'xpath://*[@id="main_content"]/app-secured/section/app-dashboard/div[2]/app-user-statics/div/div/div/app-items/div[1]/div/a/div'.</msg>
+<status status="PASS" starttime="20220125 17:52:46.484" endtime="20220125 17:52:46.616"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:21.234" endtime="20220125 17:52:46.616"/>
+</kw>
+<kw name="List of Administartion-Admin Modules">
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:52:56.618" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220125 17:52:46.617" endtime="20220125 17:52:56.618"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220125 17:52:56.672" level="INFO">Current page contains element '//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4'.</msg>
+<status status="PASS" starttime="20220125 17:52:56.619" endtime="20220125 17:52:56.673"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Admin Dashboard page navigated to Admmin Module</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:52:56.673" endtime="20220125 17:52:56.675"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:52:56.930" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:52:56.676" endtime="20220125 17:52:56.930"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:46.617" endtime="20220125 17:52:56.930"/>
+</kw>
+<kw name="Admin - Manage RFI Codes link in Admin page and Click Manage Manage RFI Codes link">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220125 17:52:56.938" level="INFO">Current page contains element '//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4'.</msg>
+<status status="PASS" starttime="20220125 17:52:56.930" endtime="20220125 17:52:56.938"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Click Manage RFI Codes on left pane of page</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:52:56.938" endtime="20220125 17:52:56.939"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Manage RFI Codes</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220125 17:52:56.939" level="INFO">Clicking link 'Manage RFI Codes'.</msg>
+<status status="PASS" starttime="20220125 17:52:56.939" endtime="20220125 17:52:57.098"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:53:07.115" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220125 17:52:57.098" endtime="20220125 17:53:07.115"/>
+</kw>
+<status status="PASS" starttime="20220125 17:52:56.930" endtime="20220125 17:53:07.116"/>
+</kw>
+<kw name="Existing Manage Manage RFI Codes and Count should be in Admin-Mangae Manage RFI Codes page">
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20220125 17:53:07.131" level="INFO">Current page contains element '//*[@id="main_content"]/app-secured/section/app-idams/div[1]/cvcs-page-title/div/div/div[1]/div/div/span[1]/h4'.</msg>
+<status status="PASS" starttime="20220125 17:53:07.117" endtime="20220125 17:53:07.131"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220125 17:53:07.305" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220125 17:53:07.132" endtime="20220125 17:53:07.305"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Totalnumber_RFI_Codes}</var>
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[1]/div/div/app-paginator/div/div/div[1]/div/div/div/span[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:07.330" level="INFO">${Totalnumber_RFI_Codes} = 49</msg>
+<status status="PASS" starttime="20220125 17:53:07.306" endtime="20220125 17:53:07.330"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Total number of existing user roles : ${Totalnumber_RFI_Codes}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:07.330" endtime="20220125 17:53:07.330"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:53:17.341" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220125 17:53:07.330" endtime="20220125 17:53:17.341"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:07.116" endtime="20220125 17:53:17.341"/>
+</kw>
+<kw name="Web table Pagination - Manage RFI Codes">
+<kw name="Sleep" library="BuiltIn">
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:53:37.356" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20220125 17:53:17.342" endtime="20220125 17:53:37.356"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Total}</var>
+<arg>//*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[1]/div/div/app-paginator/div/div/div[1]/div/div/div/span[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.394" level="INFO">${Total} = 49</msg>
+<status status="PASS" starttime="20220125 17:53:37.356" endtime="20220125 17:53:37.394"/>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${Total_count}</var>
+<arg>${Total}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.395" level="INFO">${Total_count} = 49</msg>
+<status status="PASS" starttime="20220125 17:53:37.395" endtime="20220125 17:53:37.395"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.417" level="INFO">${rows} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.395" endtime="20220125 17:53:37.417"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${columns}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[1]/td</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.430" level="INFO">${columns} = 5</msg>
+<status status="PASS" starttime="20220125 17:53:37.417" endtime="20220125 17:53:37.431"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${Pagination_count}</var>
+<arg>${Total_count} / ${rows}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20220125 17:53:37.431" level="INFO">${Pagination_count} = 4.9</msg>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</kw>
+<kw name="Convert To Number" library="BuiltIn">
+<var>${Pagination}</var>
+<arg>${Pagination_count}</arg>
+<doc>Converts the given item to a floating point number.</doc>
+<msg timestamp="20220125 17:53:37.431" level="INFO">${Pagination} = 4.9</msg>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Pagination}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${columns}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</kw>
+<if>
+<branch type="IF" condition="${Pagination}&lt;1">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${RFI_Code}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[1]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${RFI_Code}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</kw>
+<status status="NOT RUN" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</branch>
+<branch type="ELSE">
+<for flavor="IN RANGE">
+<var>${x}</var>
+<value>0</value>
+<value>${Pagination}</value>
+<iter>
+<var name="${x}">0.0</var>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.431" level="INFO">${i1} = 1</msg>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.431"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.443" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.443"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.471" level="INFO">${Column1} = R01</msg>
+<status status="PASS" starttime="20220125 17:53:37.443" endtime="20220125 17:53:37.471"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.501" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:37.471" endtime="20220125 17:53:37.501"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.501" endtime="20220125 17:53:37.501"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:37.501" endtime="20220125 17:53:37.501"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:37.501"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.501" level="INFO">${i1} = 2</msg>
+<status status="PASS" starttime="20220125 17:53:37.501" endtime="20220125 17:53:37.501"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.511" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.501" endtime="20220125 17:53:37.511"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.540" level="INFO">${Column1} = R02</msg>
+<status status="PASS" starttime="20220125 17:53:37.511" endtime="20220125 17:53:37.540"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.574" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:37.541" endtime="20220125 17:53:37.574"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.574" endtime="20220125 17:53:37.575"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:37.575" endtime="20220125 17:53:37.575"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.501" endtime="20220125 17:53:37.575"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.575" level="INFO">${i1} = 3</msg>
+<status status="PASS" starttime="20220125 17:53:37.575" endtime="20220125 17:53:37.575"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.594" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.575" endtime="20220125 17:53:37.594"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.626" level="INFO">${Column1} = R03</msg>
+<status status="PASS" starttime="20220125 17:53:37.594" endtime="20220125 17:53:37.626"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.660" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:37.626" endtime="20220125 17:53:37.660"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.661" endtime="20220125 17:53:37.661"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:37.661" endtime="20220125 17:53:37.661"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.575" endtime="20220125 17:53:37.661"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.661" level="INFO">${i1} = 4</msg>
+<status status="PASS" starttime="20220125 17:53:37.661" endtime="20220125 17:53:37.661"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.671" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.661" endtime="20220125 17:53:37.671"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.703" level="INFO">${Column1} = R04</msg>
+<status status="PASS" starttime="20220125 17:53:37.671" endtime="20220125 17:53:37.703"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.734" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:37.703" endtime="20220125 17:53:37.734"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.734" endtime="20220125 17:53:37.735"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:37.735" endtime="20220125 17:53:37.735"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.661" endtime="20220125 17:53:37.735"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.735" level="INFO">${i1} = 5</msg>
+<status status="PASS" starttime="20220125 17:53:37.735" endtime="20220125 17:53:37.735"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.746" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.735" endtime="20220125 17:53:37.746"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.776" level="INFO">${Column1} = R05</msg>
+<status status="PASS" starttime="20220125 17:53:37.747" endtime="20220125 17:53:37.776"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.809" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:37.776" endtime="20220125 17:53:37.809"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.809" endtime="20220125 17:53:37.810"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:37.810" endtime="20220125 17:53:37.810"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.735" endtime="20220125 17:53:37.810"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.810" level="INFO">${i1} = 6</msg>
+<status status="PASS" starttime="20220125 17:53:37.810" endtime="20220125 17:53:37.810"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.820" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.810" endtime="20220125 17:53:37.821"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.862" level="INFO">${Column1} = R06</msg>
+<status status="PASS" starttime="20220125 17:53:37.821" endtime="20220125 17:53:37.862"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.891" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:37.862" endtime="20220125 17:53:37.891"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.891" endtime="20220125 17:53:37.891"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:37.891" endtime="20220125 17:53:37.891"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.810" endtime="20220125 17:53:37.891"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.891" level="INFO">${i1} = 7</msg>
+<status status="PASS" starttime="20220125 17:53:37.891" endtime="20220125 17:53:37.891"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.901" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.891" endtime="20220125 17:53:37.901"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.933" level="INFO">${Column1} = R07</msg>
+<status status="PASS" starttime="20220125 17:53:37.902" endtime="20220125 17:53:37.933"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.969" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:37.933" endtime="20220125 17:53:37.969"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:37.969" endtime="20220125 17:53:37.969"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:37.969" endtime="20220125 17:53:37.969"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.891" endtime="20220125 17:53:37.969"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:37.969" level="INFO">${i1} = 8</msg>
+<status status="PASS" starttime="20220125 17:53:37.969" endtime="20220125 17:53:37.969"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:37.980" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:37.969" endtime="20220125 17:53:37.980"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:38.012" level="INFO">${Column1} = R08</msg>
+<status status="PASS" starttime="20220125 17:53:37.980" endtime="20220125 17:53:38.012"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:38.050" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:38.012" endtime="20220125 17:53:38.050"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:38.050" endtime="20220125 17:53:38.051"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:38.051" endtime="20220125 17:53:38.051"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.969" endtime="20220125 17:53:38.051"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:38.051" level="INFO">${i1} = 9</msg>
+<status status="PASS" starttime="20220125 17:53:38.051" endtime="20220125 17:53:38.051"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:38.061" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:38.051" endtime="20220125 17:53:38.061"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:38.089" level="INFO">${Column1} = R09</msg>
+<status status="PASS" starttime="20220125 17:53:38.061" endtime="20220125 17:53:38.089"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:38.123" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:38.089" endtime="20220125 17:53:38.123"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:38.123" endtime="20220125 17:53:38.123"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:38.123" endtime="20220125 17:53:38.123"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:38.051" endtime="20220125 17:53:38.123"/>
+</iter>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:38.123"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Next</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:38.123" level="INFO">Clicking button 'Next'.</msg>
+<status status="PASS" starttime="20220125 17:53:38.123" endtime="20220125 17:53:38.209"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:53:53.214" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220125 17:53:38.209" endtime="20220125 17:53:53.214"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Pagination:${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.214" endtime="20220125 17:53:53.215"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:53:53.215"/>
+</iter>
+<iter>
+<var name="${x}">1.0</var>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.217" level="INFO">${i1} = 1</msg>
+<status status="PASS" starttime="20220125 17:53:53.215" endtime="20220125 17:53:53.217"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.237" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.217" endtime="20220125 17:53:53.237"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.299" level="INFO">${Column1} = R11</msg>
+<status status="PASS" starttime="20220125 17:53:53.237" endtime="20220125 17:53:53.299"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.348" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.299" endtime="20220125 17:53:53.348"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.348" endtime="20220125 17:53:53.348"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.348" endtime="20220125 17:53:53.348"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.215" endtime="20220125 17:53:53.348"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.348" level="INFO">${i1} = 2</msg>
+<status status="PASS" starttime="20220125 17:53:53.348" endtime="20220125 17:53:53.348"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.360" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.348" endtime="20220125 17:53:53.360"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.393" level="INFO">${Column1} = R12</msg>
+<status status="PASS" starttime="20220125 17:53:53.360" endtime="20220125 17:53:53.393"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.426" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.393" endtime="20220125 17:53:53.426"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.427" endtime="20220125 17:53:53.427"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.427" endtime="20220125 17:53:53.427"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.348" endtime="20220125 17:53:53.427"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.427" level="INFO">${i1} = 3</msg>
+<status status="PASS" starttime="20220125 17:53:53.427" endtime="20220125 17:53:53.427"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.439" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.427" endtime="20220125 17:53:53.439"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.467" level="INFO">${Column1} = R13</msg>
+<status status="PASS" starttime="20220125 17:53:53.439" endtime="20220125 17:53:53.467"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.501" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.467" endtime="20220125 17:53:53.501"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.501" endtime="20220125 17:53:53.501"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.501" endtime="20220125 17:53:53.501"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.427" endtime="20220125 17:53:53.501"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.501" level="INFO">${i1} = 4</msg>
+<status status="PASS" starttime="20220125 17:53:53.501" endtime="20220125 17:53:53.501"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.513" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.501" endtime="20220125 17:53:53.513"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.536" level="INFO">${Column1} = R14</msg>
+<status status="PASS" starttime="20220125 17:53:53.513" endtime="20220125 17:53:53.536"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.562" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.536" endtime="20220125 17:53:53.562"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.562" endtime="20220125 17:53:53.562"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.562" endtime="20220125 17:53:53.562"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.501" endtime="20220125 17:53:53.562"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.562" level="INFO">${i1} = 5</msg>
+<status status="PASS" starttime="20220125 17:53:53.562" endtime="20220125 17:53:53.562"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.574" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.562" endtime="20220125 17:53:53.574"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.605" level="INFO">${Column1} = R15</msg>
+<status status="PASS" starttime="20220125 17:53:53.574" endtime="20220125 17:53:53.605"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.635" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.605" endtime="20220125 17:53:53.635"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.635" endtime="20220125 17:53:53.635"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.635" endtime="20220125 17:53:53.635"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.562" endtime="20220125 17:53:53.635"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.636" level="INFO">${i1} = 6</msg>
+<status status="PASS" starttime="20220125 17:53:53.636" endtime="20220125 17:53:53.636"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.646" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.636" endtime="20220125 17:53:53.646"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.677" level="INFO">${Column1} = R16</msg>
+<status status="PASS" starttime="20220125 17:53:53.646" endtime="20220125 17:53:53.677"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.704" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.677" endtime="20220125 17:53:53.704"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.704" endtime="20220125 17:53:53.704"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.705" endtime="20220125 17:53:53.705"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.636" endtime="20220125 17:53:53.705"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.705" level="INFO">${i1} = 7</msg>
+<status status="PASS" starttime="20220125 17:53:53.705" endtime="20220125 17:53:53.705"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.715" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.705" endtime="20220125 17:53:53.715"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.742" level="INFO">${Column1} = R17</msg>
+<status status="PASS" starttime="20220125 17:53:53.715" endtime="20220125 17:53:53.742"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.775" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.743" endtime="20220125 17:53:53.775"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.775" endtime="20220125 17:53:53.776"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.776" endtime="20220125 17:53:53.776"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.705" endtime="20220125 17:53:53.776"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.777" level="INFO">${i1} = 8</msg>
+<status status="PASS" starttime="20220125 17:53:53.776" endtime="20220125 17:53:53.777"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.783" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.777" endtime="20220125 17:53:53.783"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.810" level="INFO">${Column1} = R18</msg>
+<status status="PASS" starttime="20220125 17:53:53.784" endtime="20220125 17:53:53.810"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.842" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.810" endtime="20220125 17:53:53.842"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.842" endtime="20220125 17:53:53.843"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.843" endtime="20220125 17:53:53.843"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.776" endtime="20220125 17:53:53.843"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:53:53.843" level="INFO">${i1} = 9</msg>
+<status status="PASS" starttime="20220125 17:53:53.843" endtime="20220125 17:53:53.843"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.855" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:53:53.843" endtime="20220125 17:53:53.855"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.888" level="INFO">${Column1} = R19</msg>
+<status status="PASS" starttime="20220125 17:53:53.855" endtime="20220125 17:53:53.888"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.920" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:53:53.888" endtime="20220125 17:53:53.920"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:53:53.921" endtime="20220125 17:53:53.921"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:53:53.921" endtime="20220125 17:53:53.922"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.843" endtime="20220125 17:53:53.922"/>
+</iter>
+<status status="PASS" starttime="20220125 17:53:53.215" endtime="20220125 17:53:53.922"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Next</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:53:53.922" level="INFO">Clicking button 'Next'.</msg>
+<status status="PASS" starttime="20220125 17:53:53.922" endtime="20220125 17:53:53.988"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:54:09.000" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220125 17:53:53.988" endtime="20220125 17:54:09.001"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Pagination:${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.001" endtime="20220125 17:54:09.002"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:53.215" endtime="20220125 17:54:09.002"/>
+</iter>
+<iter>
+<var name="${x}">2.0</var>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.002" level="INFO">${i1} = 1</msg>
+<status status="PASS" starttime="20220125 17:54:09.002" endtime="20220125 17:54:09.002"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.028" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.002" endtime="20220125 17:54:09.028"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.069" level="INFO">${Column1} = R21</msg>
+<status status="PASS" starttime="20220125 17:54:09.028" endtime="20220125 17:54:09.069"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.097" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.069" endtime="20220125 17:54:09.097"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.097" endtime="20220125 17:54:09.097"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.097" endtime="20220125 17:54:09.097"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.002" endtime="20220125 17:54:09.097"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.097" level="INFO">${i1} = 2</msg>
+<status status="PASS" starttime="20220125 17:54:09.097" endtime="20220125 17:54:09.097"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.108" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.097" endtime="20220125 17:54:09.108"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.133" level="INFO">${Column1} = R22</msg>
+<status status="PASS" starttime="20220125 17:54:09.108" endtime="20220125 17:54:09.133"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.165" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.133" endtime="20220125 17:54:09.165"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.165" endtime="20220125 17:54:09.165"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.165" endtime="20220125 17:54:09.165"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.097" endtime="20220125 17:54:09.165"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.165" level="INFO">${i1} = 3</msg>
+<status status="PASS" starttime="20220125 17:54:09.165" endtime="20220125 17:54:09.165"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.176" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.165" endtime="20220125 17:54:09.176"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.206" level="INFO">${Column1} = R23</msg>
+<status status="PASS" starttime="20220125 17:54:09.176" endtime="20220125 17:54:09.206"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.234" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.206" endtime="20220125 17:54:09.234"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.234" endtime="20220125 17:54:09.234"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.234" endtime="20220125 17:54:09.234"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.165" endtime="20220125 17:54:09.234"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.234" level="INFO">${i1} = 4</msg>
+<status status="PASS" starttime="20220125 17:54:09.234" endtime="20220125 17:54:09.234"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.245" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.234" endtime="20220125 17:54:09.245"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.268" level="INFO">${Column1} = R24</msg>
+<status status="PASS" starttime="20220125 17:54:09.245" endtime="20220125 17:54:09.268"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.303" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.268" endtime="20220125 17:54:09.303"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.303" endtime="20220125 17:54:09.304"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.304" endtime="20220125 17:54:09.304"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.234" endtime="20220125 17:54:09.304"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.305" level="INFO">${i1} = 5</msg>
+<status status="PASS" starttime="20220125 17:54:09.305" endtime="20220125 17:54:09.305"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.314" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.305" endtime="20220125 17:54:09.314"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.341" level="INFO">${Column1} = R25</msg>
+<status status="PASS" starttime="20220125 17:54:09.314" endtime="20220125 17:54:09.341"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.373" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.341" endtime="20220125 17:54:09.373"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.373" endtime="20220125 17:54:09.374"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.374" endtime="20220125 17:54:09.374"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.304" endtime="20220125 17:54:09.374"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.374" level="INFO">${i1} = 6</msg>
+<status status="PASS" starttime="20220125 17:54:09.374" endtime="20220125 17:54:09.374"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.384" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.374" endtime="20220125 17:54:09.384"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.420" level="INFO">${Column1} = R26</msg>
+<status status="PASS" starttime="20220125 17:54:09.384" endtime="20220125 17:54:09.420"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.459" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.420" endtime="20220125 17:54:09.459"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.459" endtime="20220125 17:54:09.459"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.459" endtime="20220125 17:54:09.459"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.374" endtime="20220125 17:54:09.459"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.459" level="INFO">${i1} = 7</msg>
+<status status="PASS" starttime="20220125 17:54:09.459" endtime="20220125 17:54:09.459"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.469" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.459" endtime="20220125 17:54:09.469"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.496" level="INFO">${Column1} = R27</msg>
+<status status="PASS" starttime="20220125 17:54:09.469" endtime="20220125 17:54:09.496"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.519" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.496" endtime="20220125 17:54:09.519"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.519" endtime="20220125 17:54:09.520"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.520" endtime="20220125 17:54:09.520"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.459" endtime="20220125 17:54:09.520"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.520" level="INFO">${i1} = 8</msg>
+<status status="PASS" starttime="20220125 17:54:09.520" endtime="20220125 17:54:09.520"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.529" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.520" endtime="20220125 17:54:09.529"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.557" level="INFO">${Column1} = R28</msg>
+<status status="PASS" starttime="20220125 17:54:09.529" endtime="20220125 17:54:09.557"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.599" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.558" endtime="20220125 17:54:09.599"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.599" endtime="20220125 17:54:09.599"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.599" endtime="20220125 17:54:09.599"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.520" endtime="20220125 17:54:09.599"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:09.599" level="INFO">${i1} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:09.599" endtime="20220125 17:54:09.599"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.609" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:09.599" endtime="20220125 17:54:09.609"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.640" level="INFO">${Column1} = R29</msg>
+<status status="PASS" starttime="20220125 17:54:09.610" endtime="20220125 17:54:09.640"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.672" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:09.640" endtime="20220125 17:54:09.672"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:09.672" endtime="20220125 17:54:09.672"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:09.672" endtime="20220125 17:54:09.672"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.599" endtime="20220125 17:54:09.672"/>
+</iter>
+<status status="PASS" starttime="20220125 17:54:09.002" endtime="20220125 17:54:09.672"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Next</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:09.672" level="INFO">Clicking button 'Next'.</msg>
+<status status="PASS" starttime="20220125 17:54:09.672" endtime="20220125 17:54:09.756"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:54:24.774" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220125 17:54:09.756" endtime="20220125 17:54:24.775"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Pagination:${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:24.775" endtime="20220125 17:54:24.775"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:09.002" endtime="20220125 17:54:24.775"/>
+</iter>
+<iter>
+<var name="${x}">3.0</var>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:24.776" level="INFO">${i1} = 1</msg>
+<status status="PASS" starttime="20220125 17:54:24.776" endtime="20220125 17:54:24.776"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:24.787" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:24.776" endtime="20220125 17:54:24.787"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:24.814" level="INFO">${Column1} = R31</msg>
+<status status="PASS" starttime="20220125 17:54:24.788" endtime="20220125 17:54:24.814"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:24.837" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:24.814" endtime="20220125 17:54:24.837"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:24.837" endtime="20220125 17:54:24.838"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:24.838" endtime="20220125 17:54:24.838"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:24.776" endtime="20220125 17:54:24.838"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:24.838" level="INFO">${i1} = 2</msg>
+<status status="PASS" starttime="20220125 17:54:24.838" endtime="20220125 17:54:24.838"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:24.852" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:24.838" endtime="20220125 17:54:24.852"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:24.888" level="INFO">${Column1} = R32</msg>
+<status status="PASS" starttime="20220125 17:54:24.852" endtime="20220125 17:54:24.888"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:24.925" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:24.888" endtime="20220125 17:54:24.925"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:24.925" endtime="20220125 17:54:24.925"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:24.925" endtime="20220125 17:54:24.925"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:24.838" endtime="20220125 17:54:24.925"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:24.925" level="INFO">${i1} = 3</msg>
+<status status="PASS" starttime="20220125 17:54:24.925" endtime="20220125 17:54:24.925"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:24.937" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:24.925" endtime="20220125 17:54:24.937"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:24.973" level="INFO">${Column1} = R33</msg>
+<status status="PASS" starttime="20220125 17:54:24.937" endtime="20220125 17:54:24.973"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.009" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:24.973" endtime="20220125 17:54:25.009"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:25.009" endtime="20220125 17:54:25.009"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:25.009" endtime="20220125 17:54:25.009"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:24.925" endtime="20220125 17:54:25.009"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:25.009" level="INFO">${i1} = 4</msg>
+<status status="PASS" starttime="20220125 17:54:25.009" endtime="20220125 17:54:25.009"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.023" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:25.009" endtime="20220125 17:54:25.023"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.060" level="INFO">${Column1} = R34</msg>
+<status status="PASS" starttime="20220125 17:54:25.023" endtime="20220125 17:54:25.060"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.097" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:25.060" endtime="20220125 17:54:25.097"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:25.097" endtime="20220125 17:54:25.097"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:25.097" endtime="20220125 17:54:25.097"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:25.009" endtime="20220125 17:54:25.097"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:25.097" level="INFO">${i1} = 5</msg>
+<status status="PASS" starttime="20220125 17:54:25.097" endtime="20220125 17:54:25.097"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.110" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:25.097" endtime="20220125 17:54:25.110"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.136" level="INFO">${Column1} = R35</msg>
+<status status="PASS" starttime="20220125 17:54:25.110" endtime="20220125 17:54:25.136"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.172" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:25.136" endtime="20220125 17:54:25.172"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:25.172" endtime="20220125 17:54:25.172"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:25.172" endtime="20220125 17:54:25.173"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:25.097" endtime="20220125 17:54:25.173"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:25.173" level="INFO">${i1} = 6</msg>
+<status status="PASS" starttime="20220125 17:54:25.173" endtime="20220125 17:54:25.173"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.183" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:25.173" endtime="20220125 17:54:25.183"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.216" level="INFO">${Column1} = R36</msg>
+<status status="PASS" starttime="20220125 17:54:25.183" endtime="20220125 17:54:25.216"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.255" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:25.217" endtime="20220125 17:54:25.255"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:25.255" endtime="20220125 17:54:25.256"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:25.256" endtime="20220125 17:54:25.256"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:25.173" endtime="20220125 17:54:25.256"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:25.256" level="INFO">${i1} = 7</msg>
+<status status="PASS" starttime="20220125 17:54:25.256" endtime="20220125 17:54:25.256"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.267" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:25.256" endtime="20220125 17:54:25.267"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.300" level="INFO">${Column1} = R37</msg>
+<status status="PASS" starttime="20220125 17:54:25.267" endtime="20220125 17:54:25.300"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.332" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:25.300" endtime="20220125 17:54:25.332"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:25.332" endtime="20220125 17:54:25.332"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:25.332" endtime="20220125 17:54:25.332"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:25.256" endtime="20220125 17:54:25.332"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:25.332" level="INFO">${i1} = 8</msg>
+<status status="PASS" starttime="20220125 17:54:25.332" endtime="20220125 17:54:25.332"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.344" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:25.332" endtime="20220125 17:54:25.344"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.377" level="INFO">${Column1} = R38</msg>
+<status status="PASS" starttime="20220125 17:54:25.344" endtime="20220125 17:54:25.377"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.404" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:25.377" endtime="20220125 17:54:25.404"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:25.404" endtime="20220125 17:54:25.404"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:25.404" endtime="20220125 17:54:25.404"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:25.332" endtime="20220125 17:54:25.404"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:25.404" level="INFO">${i1} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:25.404" endtime="20220125 17:54:25.404"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.416" level="INFO">${rows_final} = 10</msg>
+<status status="PASS" starttime="20220125 17:54:25.404" endtime="20220125 17:54:25.416"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.443" level="INFO">${Column1} = R39</msg>
+<status status="PASS" starttime="20220125 17:54:25.416" endtime="20220125 17:54:25.443"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.473" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:25.443" endtime="20220125 17:54:25.473"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:25.473" endtime="20220125 17:54:25.474"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:25.474" endtime="20220125 17:54:25.474"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:25.404" endtime="20220125 17:54:25.474"/>
+</iter>
+<status status="PASS" starttime="20220125 17:54:24.776" endtime="20220125 17:54:25.474"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Next</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:25.474" level="INFO">Clicking button 'Next'.</msg>
+<status status="PASS" starttime="20220125 17:54:25.474" endtime="20220125 17:54:25.554"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:54:40.554" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220125 17:54:25.554" endtime="20220125 17:54:40.554"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Pagination:${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:40.554" endtime="20220125 17:54:40.555"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:24.776" endtime="20220125 17:54:40.555"/>
+</iter>
+<iter>
+<var name="${x}">4.0</var>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>10</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:40.556" level="INFO">${i1} = 1</msg>
+<status status="PASS" starttime="20220125 17:54:40.556" endtime="20220125 17:54:40.556"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.570" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:40.556" endtime="20220125 17:54:40.570"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.608" level="INFO">${Column1} = R56</msg>
+<status status="PASS" starttime="20220125 17:54:40.570" endtime="20220125 17:54:40.608"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.640" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:40.608" endtime="20220125 17:54:40.640"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:40.640" endtime="20220125 17:54:40.640"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:40.640" endtime="20220125 17:54:40.640"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:40.556" endtime="20220125 17:54:40.640"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:40.640" level="INFO">${i1} = 2</msg>
+<status status="PASS" starttime="20220125 17:54:40.640" endtime="20220125 17:54:40.640"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.651" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:40.640" endtime="20220125 17:54:40.651"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.684" level="INFO">${Column1} = R99</msg>
+<status status="PASS" starttime="20220125 17:54:40.651" endtime="20220125 17:54:40.684"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.714" level="INFO">${Column2} = COMP</msg>
+<status status="PASS" starttime="20220125 17:54:40.684" endtime="20220125 17:54:40.714"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:40.714" endtime="20220125 17:54:40.714"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:40.714" endtime="20220125 17:54:40.714"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:40.640" endtime="20220125 17:54:40.714"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:40.714" level="INFO">${i1} = 3</msg>
+<status status="PASS" starttime="20220125 17:54:40.714" endtime="20220125 17:54:40.714"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.725" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:40.714" endtime="20220125 17:54:40.725"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.753" level="INFO">${Column1} = X01</msg>
+<status status="PASS" starttime="20220125 17:54:40.725" endtime="20220125 17:54:40.753"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.778" level="INFO">${Column2} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:54:40.753" endtime="20220125 17:54:40.778"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:40.778" endtime="20220125 17:54:40.779"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:40.779" endtime="20220125 17:54:40.779"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:40.714" endtime="20220125 17:54:40.779"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:40.779" level="INFO">${i1} = 4</msg>
+<status status="PASS" starttime="20220125 17:54:40.779" endtime="20220125 17:54:40.779"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.789" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:40.779" endtime="20220125 17:54:40.789"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.821" level="INFO">${Column1} = X02</msg>
+<status status="PASS" starttime="20220125 17:54:40.789" endtime="20220125 17:54:40.821"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.850" level="INFO">${Column2} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:54:40.821" endtime="20220125 17:54:40.850"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:40.851" endtime="20220125 17:54:40.851"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:40.851" endtime="20220125 17:54:40.851"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:40.779" endtime="20220125 17:54:40.851"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:40.851" level="INFO">${i1} = 5</msg>
+<status status="PASS" starttime="20220125 17:54:40.851" endtime="20220125 17:54:40.851"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.860" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:40.851" endtime="20220125 17:54:40.860"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.888" level="INFO">${Column1} = X03</msg>
+<status status="PASS" starttime="20220125 17:54:40.860" endtime="20220125 17:54:40.888"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.917" level="INFO">${Column2} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:54:40.888" endtime="20220125 17:54:40.917"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:40.918" endtime="20220125 17:54:40.918"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:40.918" endtime="20220125 17:54:40.918"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:40.851" endtime="20220125 17:54:40.918"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:40.918" level="INFO">${i1} = 6</msg>
+<status status="PASS" starttime="20220125 17:54:40.918" endtime="20220125 17:54:40.918"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.930" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:40.918" endtime="20220125 17:54:40.930"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.951" level="INFO">${Column1} = X04</msg>
+<status status="PASS" starttime="20220125 17:54:40.931" endtime="20220125 17:54:40.951"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.973" level="INFO">${Column2} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:54:40.952" endtime="20220125 17:54:40.973"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:40.973" endtime="20220125 17:54:40.974"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:40.974" endtime="20220125 17:54:40.974"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:40.918" endtime="20220125 17:54:40.974"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:40.974" level="INFO">${i1} = 7</msg>
+<status status="PASS" starttime="20220125 17:54:40.974" endtime="20220125 17:54:40.974"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:40.983" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:40.974" endtime="20220125 17:54:40.983"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.006" level="INFO">${Column1} = X05</msg>
+<status status="PASS" starttime="20220125 17:54:40.983" endtime="20220125 17:54:41.006"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.030" level="INFO">${Column2} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:54:41.006" endtime="20220125 17:54:41.030"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:41.030" endtime="20220125 17:54:41.030"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:41.030" endtime="20220125 17:54:41.030"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:40.974" endtime="20220125 17:54:41.030"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:41.030" level="INFO">${i1} = 8</msg>
+<status status="PASS" starttime="20220125 17:54:41.030" endtime="20220125 17:54:41.030"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.040" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:41.030" endtime="20220125 17:54:41.040"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.063" level="INFO">${Column1} = X06</msg>
+<status status="PASS" starttime="20220125 17:54:41.040" endtime="20220125 17:54:41.063"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.102" level="INFO">${Column2} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:54:41.063" endtime="20220125 17:54:41.103"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:41.103" endtime="20220125 17:54:41.103"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20220125 17:54:41.104" endtime="20220125 17:54:41.104"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:41.030" endtime="20220125 17:54:41.104"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${i1}</var>
+<arg>${i}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20220125 17:54:41.105" level="INFO">${i1} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:41.105" endtime="20220125 17:54:41.105"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${rows_final}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.115" level="INFO">${rows_final} = 9</msg>
+<status status="PASS" starttime="20220125 17:54:41.105" endtime="20220125 17:54:41.115"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column1}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.154" level="INFO">${Column1} = X07</msg>
+<status status="PASS" starttime="20220125 17:54:41.115" endtime="20220125 17:54:41.154"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Column2}</var>
+<arg>xpath://*[@id="main_content"]/app-secured/section/app-idams/div[2]/div/div/div/app-system-maintenance-container/div/div[2]/app-rfi-codes/form/div/div[2]/div[2]/div[2]/roots-table/div/div/table/tbody/tr[${i1}]/td[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.189" level="INFO">${Column2} = SAFE</msg>
+<status status="PASS" starttime="20220125 17:54:41.154" endtime="20220125 17:54:41.189"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${Column1} : ${Column2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:41.189" endtime="20220125 17:54:41.190"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${i1} == ${rows_final}</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<msg timestamp="20220125 17:54:41.190" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20220125 17:54:41.190" endtime="20220125 17:54:41.190"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:41.105" endtime="20220125 17:54:41.190"/>
+</iter>
+<status status="PASS" starttime="20220125 17:54:40.555" endtime="20220125 17:54:41.190"/>
+</for>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Next</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220125 17:54:41.190" level="INFO">Clicking button 'Next'.</msg>
+<status status="PASS" starttime="20220125 17:54:41.190" endtime="20220125 17:54:41.239"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220125 17:54:56.260" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" starttime="20220125 17:54:41.239" endtime="20220125 17:54:56.260"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Pagination:${x}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:56.260" endtime="20220125 17:54:56.261"/>
+</kw>
+<status status="PASS" starttime="20220125 17:54:40.555" endtime="20220125 17:54:56.261"/>
+</iter>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:54:56.261"/>
+</for>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:54:56.261"/>
+</branch>
+<status status="PASS" starttime="20220125 17:53:37.431" endtime="20220125 17:54:56.261"/>
+</if>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220125 17:54:56.262" endtime="20220125 17:54:58.483"/>
+</kw>
+<status status="PASS" starttime="20220125 17:53:17.342" endtime="20220125 17:54:58.483"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>**** Test case is Passed *****</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220125 17:54:58.484" endtime="20220125 17:54:58.484"/>
+</kw>
+<tag>Functional</tag>
+<tag>Regression</tag>
+<tag>Sanity</tag>
+<status status="PASS" starttime="20220125 17:52:15.983" endtime="20220125 17:54:58.484"/>
+</test>
+<doc>MiCAVS WEB APPLICATION TESTING</doc>
+<status status="PASS" starttime="20220125 17:52:15.696" endtime="20220125 17:54:58.487"/>
+</suite>
+<status status="PASS" starttime="20220125 17:52:15.665" endtime="20220125 17:54:58.488"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+<stat pass="1" fail="0" skip="0">Regression</stat>
+<stat pass="1" fail="0" skip="0">Sanity</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Administration">Administration</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Admin-ManageRFI Codes">Administration.Admin-ManageRFI Codes</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220125 17:52:15.660" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Bhanu.Battu\automation\Scripts\robot.exe
+  c:\users\bhanu.battu\automation\python39.zip
+  c:\users\bhanu.battu\automation\DLLs
+  c:\users\bhanu.battu\automation\lib
+  c:\users\bhanu.battu\automation
+  C:\Users\Bhanu.Battu\AppData\Roaming\Python\Python39\site-packages
+  c:\users\bhanu.battu\automation\lib\site-packages
+  c:\users\bhanu.battu\automation\lib\site-packages\win32
+  c:\users\bhanu.battu\automation\lib\site-packages\win32\lib
+  c:\users\bhanu.battu\automation\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20220125 17:52:15.982" level="ERROR">Error in file 'C:\Users\Bhanu.Battu\PycharmProjects\TestProject\TestCases\Administration\Admin-ManageRFI_Codes.robot' on line 7: Variable file '..\TestData\TestData.py' does not exist.</msg>
+</errors>
+</robot>

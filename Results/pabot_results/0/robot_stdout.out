@@ -1,0 +1,116 @@
+==============================================================================
+Administration                                                                
+==============================================================================
+Administration.Admin Module ManageUserroles :: MiCAVS WEB APPLICATION TESTING 
+==============================================================================
+Verify Admin user Dashboard                                           **** Test case -1 is started *****
+**** Test case is Passed ****
+| PASS |
+------------------------------------------------------------------------------
+Veriy Administartion list of Modules                                  **** Test Case -2 is started ****
+Admin Dashboard page navigated to Admmin Module
+**** Test case is Passed *****
+| PASS |
+------------------------------------------------------------------------------
+Veriy Administartion - Admin Manage user roles - Existing user rol... **** Test Case -3 is started ****
+| FAIL |
+WebDriverException: Message: unknown error: DevToolsActivePort file doesn't exist
+------------------------------------------------------------------------------
+Veriy Administartion - Admin Manage user roles - Search               **** Test Case -3.1 is started ****
+Admin Dashboard page navigated to Admmin Module
+Click Manage user roles on left pane of page
+Analyst
+Role Name value Analyst not in Role Name Dropdown:1st loop
+Role Name value Analyst not in Role Name Dropdown:2st loop
+Role Name value Analyst not in Role Name Dropdown:3st loop
+Role Name value Analyst not in Role Name Dropdown:4st loop
+Role Name value Analyst not in Role Name Dropdown:5st loop
+Role Name value Analyst not in Role Name Dropdown:6st loop
+Role Name value Analyst not in Role Name Dropdown:7st loop
+Role Name value Analyst not in Role Name Dropdown:8st loop
+1.0
+1
+4
+Analyst : COMP AND SAFE Analyst
+Pagination:0.0
+**** Test case is Passed *****
+| PASS |
+------------------------------------------------------------------------------
+Veriy Administartion - Admin Manage user roles - Existing users in... **** Test Case -4 is started ****
+Admin Dashboard page navigated to Admmin Module
+Click Manage user roles on left pane of page
+Total number of existing user roles : 11
+Total number of existing users : 60
+6.0
+10
+7
+Elye : Ely
+WashburnJ : Washburn
+BanksS : Banks
+MannsJ : J
+JohnsonC : C
+worker01 : Staff
+LauC : Staff
+worker02 : Technician
+cvstaff : Staff2
+Pagination:0.0
+prov01 : Guru
+Christine : Lau
+Data : Conversion
+Jacquie : Manns
+Caralo : Johnson
+Flan : Falan
+martin : Marteen
+smacauley : Mccauley
+JNapier : Napier
+Pagination:1.0
+JDalton : Dalton
+MCurie : Curie
+sjohn : john
+CBabbage : Babbage
+WHamilton : Hamilton
+WHamilton : Hamilton
+Pzambrano : zambrano
+martin1 : Marteen
+sjohn : john
+Pagination:2.0
+ : WorkL
+saml : Louis
+patrick : KUMAR
+kingf : King
+woodp : Wood
+TTR : John
+TTR : MIster
+dhoni : captain
+deptmgr : Speer
+Pagination:3.0
+Serena : Williams
+suri : Shah
+ : Atkinson
+ : sandlers
+ : Bobby
+ : Cat
+haroldJ : Finch
+worker001 : vamsi
+SoujanyaBoini : Varma
+Pagination:4.0
+Internal : paul
+gprasad : Prasad
+user01 : User
+user02 : User
+worker02 : Technician
+worker01 : Staff
+Elye : Ely
+prov01 : Guru
+WashburnJ : Washburn
+Pagination:5.0
+**** Test case is Passed *****
+| PASS |
+------------------------------------------------------------------------------
+Administration.Admin Module ManageUserroles :: MiCAVS WEB APPLICAT... | FAIL |
+5 tests, 4 passed, 1 failed
+==============================================================================
+Administration                                                        | FAIL |
+5 tests, 4 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Bhanu.Battu\PycharmProjects\TestProject\Results\pabot_results\0\output.xml
